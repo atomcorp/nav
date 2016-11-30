@@ -1,0 +1,10 @@
+gulpfile.js
+*.sublime-workspace
+dist/
+prepros.cfg
+*.sublime-project
+node_modules
+source/html
+*.sublime-project
+*.sublime-workspace
+*.jshintignore

@@ -1,0 +1,41 @@
+//
+// Warning!
+//
+
+// clip-path: polygon does not work for 
+
+.swipe {
+	position: relative;
+	height: 800px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.swipe--below {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-size: cover;
+}
+
+.swipe__container--above {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	clip-path: polygon(40.4% 0, 100% 0, 100% 100%, 0 100%);
+	overflow: hidden;
+	left: 0%;
+}
+
+.swipe--above {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	background-position: center center;
+	background-size: cover;
+}

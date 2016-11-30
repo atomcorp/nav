@@ -1,0 +1,126 @@
+
+
+//
+// Temp
+//
+
+.yoyo-nav-fixed-tmp {
+    margin: 0;
+    border-radius: 0;
+    height: 52px;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+// Existing stuff
+
+.hero {
+    height: 314px;
+    position: relative;
+}
+
+.hero__image {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
+
+.hero--xs {
+    display: block;
+}
+.hero--s {
+    display: none;
+}
+.hero--m {
+    display: none;
+}
+.hero--l {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 650px;
+    }
+
+    .hero--xs {
+        display: none;
+    }
+    .hero--s {
+        display: block;
+    }
+    .hero--m {
+        display: none;
+    }
+    .hero--l {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .hero--xs {
+        display: none;
+    }
+    .hero--s {
+        display: none;
+    }
+    .hero--m {
+        display: block;
+    }
+    .hero--l {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    // Hero sizes - browser only downloads relevant size
+    .hero--xs {
+        display: none;
+    }
+    .hero--s {
+        display: none;
+    }
+    .hero--m {
+        display: none;
+    }
+    .hero--l {
+        display: block;
+    }
+
+}
+
+.hero--l {
+    display: block;
+}
+
+//
+// New
+//
+
+.hero--yoyo {
+    height: 680px;
+    overflow: hidden;
+}
+
+.hero__fixed {
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: auto 50%;
+    z-index: 1;
+    background-attachment: fixed;
+    height: 680px;
+}
+
+//
+//
+//

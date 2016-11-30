@@ -1,0 +1,26 @@
+.logo {
+	height: 34.69px;
+	width: 138px;
+	&.svg {
+		path {
+			fill-opacity: 1;
+		}
+	}
+}
+
+.nav-background {
+	background: #3d4550;
+}
+
+.nav {
+	display: flex;
+}
+
+.nav__logo {
+	
+}
+
+.nav__primary--products {
+	// font-family: $brown-regular;
+	color: #d3d3d3;
+}
