@@ -28,7 +28,7 @@ $('.bang-btn').on('click', function(event) {
 	event.preventDefault();
 	if (!$(this).hasClass('active')) {
 		$(this).addClass('active');
-		$('.dropdown3').show().addClass('fadeInDown');
+		$('.dropdown3').show().addClass('slideInLeft');
 	} else {
 		$(this).removeClass('active');
 		$('.dropdown3').hide().removeClass('slideInLeft');

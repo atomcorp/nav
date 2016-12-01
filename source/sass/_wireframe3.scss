@@ -1,9 +1,39 @@
 .dropdown3 {
 	display: block;
+	max-width: 1600px;
 }
 
 .bang-btn {
     border: 4px solid;
     padding: 8px 15px;
     cursor: pointer;
+}
+
+.bo__nav {
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.bo__nav-li {
+    margin: 0 0 15px;
+}
+
+.bo__product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bo__cats {
+	flex-grow: 1;
+}
+
+.bo__1-product {
+    padding: 15px;
+    text-align: center;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: 4px solid #41403E;
+    margin: 7.5px;
+    margin-right: auto;
+    width: 32%;
 }
