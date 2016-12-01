@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/dist/main.css">
 </head>
-<body>
+<body class="wireframe2">
 	
 	
 
@@ -17,13 +17,22 @@
 		<div class="logo">
 			<h1>Logo</h1>
 		</div>
-		<div class="products">
-			<div class="product-btn box border">
-				Products <span class="arrow">></span>
+		<div class="nav__products">
+			<div class="product-btn2 box border" data-drop="hifi">
+				Hi-Fi&nbsp;<span class="arrow">></span>
+			</div>
+			<div class="product-btn2 box border" data-drop="speak">
+				Speakers&nbsp;<span class="arrow">></span>
+			</div>
+			<div class="product-btn2 box border">
+				Home Cinema&nbsp;<span class="arrow">></span>
+			</div>
+			<div class="product-btn2 box border">
+				Wireless Sound&nbsp;<span class="arrow">></span>
 			</div>
 		</div>
 		<div class="search">
-			<div class="search-box box box-test-2">
+			<div class="search-box2 box box-test-2">
 				Search...
 				<span class="mag-glass"><img src="source/imgs/magnifying-glass.png" alt=""></span>
 			</div>
@@ -33,87 +42,110 @@
 		</div>
 	</div>
 
-	<div class="dropdown box box-test-3 animated">
-		<div class="container">
-			<div class="dropdown-categories">
-				<div class="category-new">
-					<div class="dropdown-heading">
-						New / Popular
+	<div class="dropdown dropdown2 box box-test-3 animated" data-down="hifi">
+		<div class="container-fluid">
+			<h2 class="lenovo-title">Hi-Fi</h2>
+			<div class="lenovos">
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Disc Players
 					</div>
-					<div class="product">
-						<div class="range-link">Yoyo</div>
-						<div class="range-link">851 Series</div>
-						<div class="range-link">CX Series</div>
-					</div>
+					<img src="source/imgs/nav/cassete.jpg" alt="" class="responsive-image">
 				</div>
-				<div class="category-products">
-					<div class="dropdown-heading">
-						Categories
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Amplifiers
 					</div>
-					<div class="product-column">
-						<div class="product">
-							<div class="products__label">
-								Hifi
-							</div>
-							<div class="products-stuff">
-								<div class="range-link">Network Players</div>
-								<div class="range-link">Disc Players</div>
-								<div class="range-link">Amplifiers</div>
-								<div class="range-link">DACs</div>
-								<div class="range-link">Phono Stages</div>
-								<div class="range-link">All-in-one Systems</div>
-								<div class="range-link">SE1</div>
-							</div>
-						</div>
-						<div class="product">
-							<div class="products__label">
-								Speakers
-							</div>
-							<div class="products-stuff">
-								<div class="range-link">Floor Standing</div>
-								<div class="range-link">Standmount</div>
-								<div class="range-link">Bookshelf</div>
-								<div class="range-link">Surround</div>
-								<div class="range-link">Subwoofers</div>
-								<div class="range-link">In-Ceiling</div>
-							</div>
-						</div>
-						<div class="product">
-							<div class="products__label">
-								Home Cinema
-							</div>
-							<div class="products-stuff">
-								<div class="range-link">AV Receivers</div>
-								<div class="range-link">Our Universal Player</div>
-								<div class="range-link">Speakers</div>
-								<div class="range-link">TV Sound</div>
-							</div>
-						</div>
-						<div class="product">
-							<div class="products__label">
-								Wireless Sound
-							</div>
-							<div class="products-stuff">
-								<div class="range-link">Yoyo</div> 
-								<div class="range-link">All</div>
-							</div>
-						</div>
+					<img src="source/imgs/nav/cd.jpg" alt="" class="responsive-image">
+				</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						DACs
+					</div>
+					<img src="source/imgs/nav/earphones.jpg" alt="" class="responsive-image">
+				</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Network Players
+					</div>
+					<img src="source/imgs/nav/speaker-pair.jpg" alt="" class="responsive-image">
+				</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Phono Stages
+					</div>
+					<img src="source/imgs/nav/speaker.jpg" alt="" class="responsive-image">
+				</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						All-in-one Systems
+					</div>
+					<img src="source/imgs/nav/cd.jpg" alt="" class="responsive-image">
+				</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						SE1
+					</div>
+					<img src="source/imgs/nav/speaker.jpg" alt="" class="responsive-image">
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="dropdown dropdown2 box box-test-3 animated" data-down="speak">
+		<div class="container">
+			<h2 class="lenovo-title">Speakers</h2>
+			<div class="lenovos">
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Floor Standing
 					</div>
+					<img src="source/imgs/nav/speaker-pair.jpg" alt="" class="responsive-image">
 				</div>
-				<div class="cta-columns">
-					<div class="dropdown-cta bg-img">
-						<div class="cta-btn box border">
-							XMAS CTA
-						</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Standmount
 					</div>
+					<img src="source/imgs/nav/cassete.jpg" alt="" class="responsive-image">
+				</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Bookshelf
+					</div>
+					<img src="source/imgs/nav/earphones.jpg" alt="" class="responsive-image">
+				</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Standmount
+					</div>
+					<img src="source/imgs/nav/cd.jpg" alt="" class="responsive-image">
+				</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Phono Stages
+					</div>
+					<img src="source/imgs/nav/speaker.jpg" alt="" class="responsive-image">
+				</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Surround
+					</div>
+					<img src="source/imgs/nav/cd.jpg" alt="" class="responsive-image">
+				</div>
+				<div class="lenovo__product">
+					<div class="lenovo__label">
+						Subwoofers
+					</div>
+					<img src="source/imgs/nav/speaker.jpg" alt="" class="responsive-image">
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="hero bg-img box border">
-		
+		<div class="egg">
+			Lenovo 2
+		</div>
 	</div>
 
 	<div class="container">
@@ -121,7 +153,7 @@
 	</div>
 
 	<div class="container">
-		<h2>Navigation example 1</h2>
+		<h2>Navigation example 2</h2>
 		<div class="dummy-text">
 			
 			<div class="pretend-box box border">

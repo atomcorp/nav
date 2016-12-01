@@ -127,7 +127,16 @@ h1 {
 
 .hero {
 	height: 300px;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.egg {
+		border-radius: 50%/60% 38% 45% 31%;
+		border: 4px solid;
+		padding: 15px;
+		font-size: 36px;
+		z-index: 1;
+	}
 }
 
 .bg-img {
@@ -155,6 +164,7 @@ h1 {
 
 .dummy-text {
 	column-count: 4;
+	color: #b1abab;
 }
 
 .dropdown {
@@ -213,6 +223,9 @@ h1 {
 	    display: flex;
 	    justify-content: center;
 	    align-items: center;
+	    border: 4px solid #41403E;
+	    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
 	}
 	.bg-img:after {
 		background-color: #f7e3e3;
