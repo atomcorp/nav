@@ -31,7 +31,24 @@ $('.bang-btn').on('click', function(event) {
 		$('.dropdown3').show().addClass('slideInLeft');
 	} else {
 		$(this).removeClass('active');
-		$('.dropdown3').hide().removeClass('slideInLeft');
+		$('.dropdown3').show().addClass('slideOutLeft');
+		setTimeout(function() {
+			$('.dropdown3').hide().removeClass('slideInLeft slideOutLeft');
+		}, 400);
+		
 	}
 	
+});
+
+$('.bo__nav-li.clickable').on('click', function(event) {
+	event.preventDefault();
+	var id = $(this).data('click');
+	console.log(id);
+	var toScrollTo = $('.bo__heading[data-scroll="' + id + '"]').offset().top;
+	$('body').animate({
+		scrollTop: parseInt(toScrollTo) - 30,
+		
+	}, 400, function() {
+		/* stuff to do after animation is complete */
+	});
 });
