@@ -1,3 +1,15 @@
+$('.menu').on('click', function(event) {
+	event.preventDefault();
+	if (!$(this).hasClass('active')) {
+		$(this).addClass('active');
+		$('.menu__dropdown').show().addClass('fadeInDown');
+	} else {
+		$(this).removeClass('active');
+		$('.menu__dropdown').hide().removeClass('fadeInDown');
+	}
+	
+});
+
 $('.product-btn').on('click', function(event) {
 	event.preventDefault();
 	if (!$(this).hasClass('active')) {
@@ -6,6 +18,7 @@ $('.product-btn').on('click', function(event) {
 	} else {
 		$(this).removeClass('active');
 		$('.dropdown').hide().removeClass('fadeInDown');
+
 	}
 	
 });
