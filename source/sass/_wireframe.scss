@@ -88,6 +88,10 @@ h1 {
 }
 
 .search {
+	display: inline-block;
+}
+
+.nav-options {
 	margin: 0 0 0 auto;
 }
 
@@ -107,10 +111,21 @@ h1 {
 }
 
 .menu {
+	display: inline-block;
 	padding: 15px;
 	img {
 		height: 28px;
 		width: 28px;
+	}
+}
+
+.languages {
+	font-size: 12px;
+	display: flex;
+	justify-content: flex-end;
+	padding: 0 15px;
+	.selected {
+		border-bottom: 2px solid;
 	}
 }
 
