@@ -89,6 +89,11 @@ h1 {
 
 .search {
 	display: inline-block;
+	position: relative;
+}
+
+.search-2 {
+	margin: 0 0 0 auto;
 }
 
 .nav-options {
@@ -103,7 +108,9 @@ h1 {
 }
 
 .mag-glass {
-	float: right;
+	position: absolute;
+	top: 10px;
+	right: 15px;
 	img {
 		width: 28px;
 		height: 28px;
@@ -127,6 +134,10 @@ h1 {
 	.selected {
 		border-bottom: 2px solid;
 	}
+}
+
+.back {
+	text-align: center;
 }
 
 .border-menu {
@@ -231,6 +242,7 @@ h1 {
 
 .range-link {
     padding: 0 0 15px;
+    cursor: pointer;
 }
 
 .product-column {
