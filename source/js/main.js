@@ -2,6 +2,6 @@
 
 jQuery(document).ready(function($) {
 
-//=include include/nav.js
+//=include include/columbus.js
 
 }); // END JQUERY

@@ -1,0 +1,49 @@
+<!-- original header -->
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+	<!-- index.nunjucks -->
+	<div class="box nav--columbus">
+		<div class="container">
+			<div class="nav">
+				<div class="logo">
+					<h1>Logo</h1>
+				</div>
+				<div class="products">
+					{% for link in navigation %}
+					<div class="product" data-dropdown-button="{{ link.machine_title }}">
+						{{ link.title }}
+					</div>
+					{% endfor %}
+					<div class="products__etc">Technology</div>
+					<div class="products__etc">About Us</div>
+					<div class="products__etc">Sign up</div>
+				</div>
+				<div class="links">
+					<div class="links__icons box">
+						<div class="links__icon lang box">En</div>
+						<div class="links__icon search"><img src="source/img/magnifying-glass.png" alt=""></div>
+					</div>
+					<div class="more">
+						More
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dropdowns nav--columbus ">
+	{% for link in navigation %}
+			<div class="dropdown box hide" data-dropdown="{{ link.machine_title }}">
+    	<div class="container">
+	    	{% for child in link['child-category'] %}
+		    	<div class="dropdown__link">
+					{{child.title}}
+		    	</div>
+	    	{% endfor %}
+	    	</div>
+    	</div>
+	{% endfor %}
+	</div>
+
+{% endblock %}
