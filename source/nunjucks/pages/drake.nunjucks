@@ -1,4 +1,0 @@
-<!-- new header -->
-
-{% extends "layout.nunjucks" %}
-
