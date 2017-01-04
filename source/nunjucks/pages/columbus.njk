@@ -2,7 +2,7 @@
 
 {% extends "layout.njk" %}
 
-{% block content %}
+{% block header %}
 	<!-- index.njk -->
 	<div class="box nav--columbus">
 		<div class="container">
@@ -45,4 +45,8 @@
     	</div>
 	{% endfor %}
 	</div>
+{% endblock %}
+
+{% block content %}
+	{% include "partials/front-content.njk" %}
 {% endblock %}

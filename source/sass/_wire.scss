@@ -74,3 +74,14 @@ body {
   background-color: #fff;
   background-image: -webkit-repeating-linear-gradient(45deg, transparent, transparent 38px, #a4ffff 38px, #a4ffff 40px), -webkit-repeating-linear-gradient(135deg, transparent, transparent 38px, #a4ffff 38px, #a4ffff 40px);
   background-image: repeating-linear-gradient(45deg, transparent, transparent 38px, #a4ffff 38px, #a4ffff 40px), repeating-linear-gradient(-45deg, transparent, transparent 38px, #a4ffff 38px, #a4ffff 40px); }
+
+
+
+.direction-arrow {
+    transform: rotate(270deg);
+    display: inline-block;
+}
+
+.direction-arrow.active {
+    transform: rotate(90deg);
+}
