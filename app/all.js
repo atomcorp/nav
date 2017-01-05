@@ -1269,4 +1269,6 @@ function getEligibleProducts(filters) {
 	}
 }
 
+$('.filter__heading.selected').trigger('click');
+
 }); // END JQUERY

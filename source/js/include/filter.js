@@ -144,3 +144,5 @@ function getEligibleProducts(filters) {
 		$list.html('<div>' +  'No results' + '</div>');
 	}
 }
+
+$('.filter__heading.selected').trigger('click');
