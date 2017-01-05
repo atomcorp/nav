@@ -1,0 +1,62 @@
+.filter__headings {
+	display: flex;
+	// justify-content: space-between;
+}
+
+.filter__heading {
+	margin: 0 15px 0 0;
+	padding: 15px;
+	border: 4px solid #fff;
+	&.selected  {
+	    border-radius: 255px 145px 255px 125px/125px 255px 145px 255px;
+	    border: 4px solid #41403E;
+	}
+}
+
+.filter__categories {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filter__category {
+	margin: 0 15px 0 0;
+	padding: 15px;
+	border: 4px solid #fff;
+	&.inactive {
+		color: #b9aeae;
+	}
+	&.selected  {
+	    border-radius: 255px 145px 255px 125px/125px 255px 145px 255px;
+	    border: 4px solid #41403E;
+	}
+}
+
+.filter__features {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filter__feature {
+	margin: 0 15px 0 0;
+	padding: 15px;
+}
+
+.filter__ranges {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filter__range {
+	margin: 0 15px 0 0;
+	padding: 15px;
+
+}
+
+.results-list {
+	display: flex;
+	flex-wrap: wrap;
+	& > * {
+		padding: 15px;
+		margin: 0 15px 0 0;
+	}
+}

@@ -10,5 +10,6 @@ $g.nav = data.navigation;
 //=include include/columbus.js
 //=include include/hash.js
 //=include include/nav.js
+//=include include/filter.js
 
 }); // END JQUERY

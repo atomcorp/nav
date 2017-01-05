@@ -1,0 +1,202 @@
+<!-- layout.njk -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link rel="stylesheet" href="wire.css">
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+	
+	
+	<!-- drake--nav -->
+
+<div class="box nav-container">
+	<div class="container">
+		<div class="nav">
+			<div class="logo">
+				<h1>Logo</h1>
+			</div>
+			<div class="nav__products">
+				<div class="nav__product dropdown-link" data-dropdown="hi-fi">
+					Hi-Fi <span class="direction-arrow">&gt;</span>
+				</div>
+				<div class="nav__product dropdown-link" data-dropdown="speakers">
+					Speakers <span class="direction-arrow">&gt;</span>
+				</div>
+				<div class="nav__product dropdown-link" data-dropdown="home_cinema">
+					Home Cinema <span class="direction-arrow">&gt;</span>
+				</div>
+				<div class="nav__product">
+					All Products
+				</div>
+			</div>
+			<div class="header-help">
+				<div class="search-container">
+					<div class="search">
+						<input placeholder="Search..." class="search-box box box-test-2">
+						<span class="mag-glass"><img src="/source/imgs/magnifying-glass.png" alt=""></span>
+					</div>
+				</div>
+				<div class="menu dropdown-link" data-dropdown="menu">
+					<img src="/source/imgs/menu-hand-drawn-lines-outlines.png" alt="">
+					Menu
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Dropdowns -->
+
+<div class="dropdown-container" data-dropdown="hi-fi">
+	<div class="dropdown__category box">
+		<div class="dropdown__sidebar">
+			<div class="dropdown__subcategories">
+				<h3>Categories</h3>
+				<ul></ul>
+			</div>
+			<div class="dropdown__ranges">
+				<h3>Ranges</h3>
+				<ul>
+					<li>EDGE</li>
+					<li>851</li>
+					<li>CX</li>
+					<li>AZUR</li>
+					<li>TOPAZ</li>
+				</ul>
+			</div>
+		</div>
+		<div class="dropdown__products">
+			<h3>Recommended</h3>
+			<ul></ul>
+		</div>
+	</div>
+</div>
+<div class="dropdown-container" data-dropdown="speakers">
+	<div class="dropdown__category box">
+		
+		<div class="dropdown__subcategories">
+			<h3>Categories</h3>
+			<ul></ul>
+		</div>
+		<div class="dropdown__products">
+			<h3>Recommended</h3>
+			<ul></ul>
+		</div>	
+	</div>
+</div>
+<div class="dropdown-container" data-dropdown="home_cinema">
+	<div class="dropdown__category box">
+		<div class="dropdown__subcategories">
+			<h3>Categories</h3>
+			<ul></ul>
+		</div>
+		<div class="dropdown__products">
+			<h3>Recommended</h3>
+			<ul></ul>
+		</div>	
+	</div>
+</div>
+<div class="dropdown-container" data-dropdown="menu">
+	
+</div>
+
+
+	<!-- You write code for this content block in another file -->
+	
+	<div class="container">
+	<div class="filter">
+		<div class="filter__group">
+			<div class="filter__title">
+				<h2>Systems</h2>
+			</div>
+			<div class="filter__headings">
+				<div class="filter__heading">Hi-Fi</div>
+				<div class="filter__heading">Speakers</div>
+				<div class="filter__heading">Home Cinema</div>
+				<div class="filter__heading selected">All</div>
+			</div>
+		</div>
+		<div class="filter__group">
+			<div class="filter__title">
+				<h2>Categories</h2>
+			</div>
+			<div class="filter__categories">
+				<div class="filter__category" data-system="Hi-Fi">Network Players</div>
+				<div class="filter__category" data-system="Hi-Fi">Disc Players</div>
+				<div class="filter__category" data-system="Hi-Fi">Amplifiers</div>
+				<div class="filter__category" data-system="Hi-Fi">DACs</div>
+				<div class="filter__category" data-system="Hi-Fi">Phono Stages</div>
+				<div class="filter__category" data-system="Hi-Fi">All-in-one Systems</div>
+				<div class="filter__category" data-system="Hi-Fi">SE1</div>
+				<div class="filter__category" data-system="Speakers">Floor Standing</div>
+				<div class="filter__category" data-system="Speakers">Standmount</div>
+				<div class="filter__category" data-system="Speakers">Bookshelf</div>
+				<div class="filter__category" data-system="Speakers">Surround</div>
+				<div class="filter__category" data-system="Speakers">Subwoofers</div>
+				<div class="filter__category" data-system="Speakers">In-Ceiling</div>
+				<div class="filter__category" data-system="Speakers">Wireless</div>
+				<div class="filter__category" data-system="Home Cinema">AV Receivers</div>
+				<div class="filter__category" data-system="Home Cinema">Bluray Player</div>
+				<div class="filter__category" data-system="Home Cinema">Surround Speakers</div>
+				<div class="filter__category" data-system="Home Cinema">Subwoofers</div>
+				<div class="filter__category" data-system="Home Cinema">TV Speakers</div>
+			</div>
+		</div>
+		<div class="filter__group hide">
+			<div class="filter__title">
+				<h2>Ranges</h2>
+			</div>
+			<div class="filter__ranges">
+				<div class="filter__range">Edge</div>
+				<div class="filter__range">851</div>
+				<div class="filter__range">CX</div>
+				<div class="filter__range">Azur</div>
+				<div class="filter__range">Topaz</div>
+				<div class="filter__range">Aero</div>
+				<div class="filter__range">Aeromax</div>
+				<div class="filter__range">Minx</div>
+				<div class="filter__range">Yoyo</div>
+				<div class="filter__range">Evo</div>
+			</div>
+
+		</div>
+		<div class="filter__group hide">
+			<div class="filter__title">
+				<h2>Features</h2>
+			</div>
+			<div class="filter__features">
+				<div class="filter__feature">Integrated</div>
+				<div class="filter__feature">Power Amp</div>
+				<div class="filter__feature">AV Receiver</div>
+				<div class="filter__feature">With DAC</div>
+				<div class="filter__feature">Portable</div>
+				<div class="filter__feature">Bluetooth</div>
+				<div class="filter__feature">Cast</div>
+				<div class="filter__feature">Airplay</div>
+				<div class="filter__feature">Stereo</div>
+				<div class="filter__feature">Multiroom</div>
+				<div class="filter__feature">TV Compatible</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<h2>Results</h2>
+	<div class="results-list">
+		
+	</div>
+</div>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="all.js"></script>
+</body>
+</html>

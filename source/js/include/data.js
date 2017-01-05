@@ -7,6 +7,7 @@ var data = {
             "tid": "1194",
             "title": "851 Series",
             "machine_title": "851_series",
+            "type": "range",
             "products": [
 
             ]
@@ -14,6 +15,7 @@ var data = {
             "tid": "1193",
             "title": "CX Series",
             "machine_title": "cx_series",
+            "type": "range",
             "products": [
 
             ]
@@ -25,17 +27,23 @@ var data = {
                 "title": "CXN",
                 "strapline": "Network Player",
                 "nid": "3799",
-                "url": "\/products\/cx\/cxn"
+                "url": "\/products\/cx\/cxn",
+                "keywords": ["Integrated"],
+                "range": "CX"
             }, {
                 "title": "Minx Xi",
                 "strapline": "Digital Music System",
                 "nid": "3872",
-                "url": "\/products\/network-players\/minx-xi"
+                "url": "\/products\/network-players\/minx-xi",
+                "keywords": ["Power Amp"],
+                "range": "Minx"
             }, {
                 "title": "Azur 851N",
                 "strapline": "Flagship Network Player",
                 "nid": "3898",
-                "url": "\/products\/851\/851n"
+                "url": "\/products\/851\/851n",
+                "keywords": ["Power Amp"],
+                "range": "851"
             }]
         }, {
             "tid": "1158",
@@ -45,27 +53,35 @@ var data = {
                 "title": "CXU",
                 "strapline": "Our best ever universal Blu-Ray player",
                 "nid": "3987",
-                "url": "\/products\/cx\/cxu"
+                "url": "\/products\/cx\/cxu",
+                "keywords": ["Power Amp"],
+                "range": "CX"
             }, {
                 "title": "CXC",
                 "strapline": "A dedicated CD transport",
                 "nid": "4003",
-                "url": "\/products\/cx\/cxc"
+                "url": "\/products\/cx\/cxc",
+                "range": "CX"
             }, {
                 "title": "Azur 851C",
                 "strapline": "Flagship Upsampling DAC, CD Player \u0026 Preamplifier",
                 "nid": "4085",
-                "url": "\/products\/851\/851c"
+                "url": "\/products\/851\/851c",
+                "keywords": ["With DAC"],
+                "range": "851"
             }, {
                 "title": "Topaz CD10",
                 "strapline": "CD Player",
                 "nid": "4261",
-                "url": "\/products\/hifi-and-home-cinema\/topaz-cd10"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-cd10",
+                "range": "Topaz"
             }, {
                 "title": "Topaz CD5",
                 "strapline": "Entry-Level CD player",
                 "nid": "4264",
-                "url": "\/products\/hifi-and-home-cinema\/topaz-cd5"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-cd5",
+                "keywords": ["With DAC"],
+                "range": "Topaz"
             }, {
                 "title": "Azur 651C",
                 "strapline": "Premium CD Player",
@@ -80,47 +96,56 @@ var data = {
                 "title": "CXA80",
                 "strapline": "80W integrated amplifier",
                 "nid": "3995",
-                "url": "\/products\/cx\/cxa80"
+                "url": "\/products\/cx\/cxa80",
+                "range": "CX"
             }, {
                 "title": "CXA60",
                 "strapline": "60W integrated amplifier",
                 "nid": "4075",
-                "url": "\/products\/cx\/cxa60"
+                "url": "\/products\/cx\/cxa60",
+                "range": "CX"
             }, {
                 "title": "Azur 851A",
                 "strapline": "Flagship Integrated class XD amplifier",
                 "nid": "4099",
-                "url": "\/products\/851\/851a"
+                "url": "\/products\/851\/851a",
+                "range": "851"
             }, {
                 "title": "Azur 851W",
                 "strapline": "Flagship power amplifier",
                 "nid": "4110",
-                "url": "\/products\/851\/851w"
+                "url": "\/products\/851\/851w",
+                "range": "851"
             }, {
                 "title": "Azur 851E",
                 "strapline": "Flagship Preamplifier",
                 "nid": "4118",
-                "url": "\/products\/851\/851e"
+                "url": "\/products\/851\/851e",
+                "range": "851"
             }, {
                 "title": "Topaz AM5",
                 "strapline": "Entry-Level Integrated Amplifier",
                 "nid": "4128",
-                "url": "\/products\/hifi-and-home-cinema\/topaz-am5"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-am5",
+                "range": "Topaz"
             }, {
                 "title": "Topaz SR10",
                 "strapline": "Powerful FM\/AM Stereo Receiver",
                 "nid": "4130",
-                "url": "\/products\/hifi-and-home-cinema\/topaz-sr10"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-sr10",
+                "range": "Topaz"
             }, {
                 "title": "Topaz SR20",
                 "strapline": "POWERFUL DIGITAL STEREO RECEIVER",
                 "nid": "4134",
-                "url": "\/products\/hifi-and-home-cinema\/topaz-sr20"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-sr20",
+                "range": "Topaz"
             }, {
                 "title": "Topaz AM10",
                 "strapline": "Integrated Amplifier",
                 "nid": "4135",
-                "url": "\/products\/hifi-and-home-cinema\/topaz-am10"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-am10",
+                "range": "Topaz"
             }, {
                 "title": "Azur 651A",
                 "strapline": "Premium integrated amplifier",
@@ -150,7 +175,8 @@ var data = {
                 "title": "Azur 851D",
                 "strapline": "Flagship Digital to Analogue Converter",
                 "nid": "3868",
-                "url": "\/products\/851\/851d"
+                "url": "\/products\/851\/851d",
+                "range": "851"
             }]
         }, {
             "tid": "1161",
@@ -185,7 +211,9 @@ var data = {
                 "title": "Minx Xi",
                 "strapline": "Digital Music System",
                 "nid": "3872",
-                "url": "\/products\/network-players\/minx-xi"
+                "url": "\/products\/network-players\/minx-xi",
+                "range": "Minx"
+
             }, {
                 "title": "ONE",
                 "strapline": "All in one music system",
@@ -220,12 +248,14 @@ var data = {
                 "title": "Aero 6",
                 "strapline": "Premium Floorstanding Speakers",
                 "nid": "4240",
-                "url": "\/products\/speakers\/aero-6"
+                "url": "\/products\/speakers\/aero-6",
+                "range": "Aero"
             }, {
                 "title": "Aeromax 6",
                 "strapline": "Flagship floorstanding speakers",
                 "nid": "4315",
-                "url": "\/products\/speakers\/aeromax-6"
+                "url": "\/products\/speakers\/aeromax-6",
+                "range": "Aeromax"
             }]
         }, {
             "tid": "1166",
@@ -240,12 +270,14 @@ var data = {
                 "title": "Aero 2",
                 "strapline": "Premium standmount speakers",
                 "nid": "4247",
-                "url": "\/products\/speakers\/aero-2"
+                "url": "\/products\/speakers\/aero-2",
+                "range": "Aero"
             }, {
                 "title": "Aeromax 2",
                 "strapline": "Flagship standmount speakers",
                 "nid": "4311",
-                "url": "\/products\/speakers\/aeromax-2"
+                "url": "\/products\/speakers\/aeromax-2",
+                "range": "Aeromax"
             }]
         }, {
             "tid": "1167",
@@ -260,17 +292,20 @@ var data = {
                 "title": "Minx XL",
                 "strapline": "Flagship bookshelf speakers",
                 "nid": "4308",
-                "url": "\/products\/speakers\/minx-xl"
+                "url": "\/products\/speakers\/minx-xl",
+                "range": "Minx"
             }, {
                 "title": "Minx Min 12",
                 "strapline": "Bookshelf speakers",
                 "nid": "4344",
-                "url": "\/products\/speakers\/minx-min-12"
+                "url": "\/products\/speakers\/minx-min-12",
+                "range": "Minx"
             }, {
                 "title": "Minx Min 22",
                 "strapline": "Bookshelf speakers",
                 "nid": "4354",
-                "url": "\/products\/speakers\/minx-min-22"
+                "url": "\/products\/speakers\/minx-min-22",
+                "range": "Minx"
             }]
         }, {
             "tid": "1168",
@@ -280,7 +315,8 @@ var data = {
                 "title": "Aero 3",
                 "strapline": "Premium surround speaker",
                 "nid": "4281",
-                "url": "\/products\/speakers\/aero-3"
+                "url": "\/products\/speakers\/aero-3",
+                "range": "Aero"
             }, {
                 "title": "SX-70",
                 "strapline": "Entry level centre speaker",
@@ -290,7 +326,8 @@ var data = {
                 "title": "Aero 5",
                 "strapline": "Premium centre speaker",
                 "nid": "4384",
-                "url": "\/products\/speakers\/aero-5"
+                "url": "\/products\/speakers\/aero-5",
+                "range": "Aero"
             }]
         }, {
             "tid": "1169",
@@ -300,7 +337,8 @@ var data = {
                 "title": "Aero 9",
                 "strapline": "500W Subwoofer",
                 "nid": "4290",
-                "url": "\/products\/speakers\/aero-9"
+                "url": "\/products\/speakers\/aero-9",
+                "range": "Aero"
             }, {
                 "title": "SX-120",
                 "strapline": "70W Subwoofer",
@@ -310,12 +348,14 @@ var data = {
                 "title": "Minx X201 ",
                 "strapline": "200W subwoofer",
                 "nid": "4369",
-                "url": "\/products\/speakers\/minx-x201"
+                "url": "\/products\/speakers\/minx-x201",
+                "range": "Minx"
             }, {
                 "title": "Minx X301",
                 "strapline": "300W Subwoofer",
                 "nid": "4370",
-                "url": "\/products\/speakers\/minx-x301"
+                "url": "\/products\/speakers\/minx-x301",
+                "range": "Minx"
             }]
         }, {
             "tid": "1170",
@@ -347,6 +387,31 @@ var data = {
                 "nid": "4389",
                 "url": "\/product\/c46"
             }]
+        },{
+            "tid": "5745",
+            "title": "Wireless",
+            "machine_title": "wireless",
+            "products": [{
+                "title": "Yoyo (S)",
+                "strapline": "Portable Bluetooth Speaker",
+                "nid": "9991",
+                "url": "\/products\/speakers\/tv2",
+                "keywords": ["Portable"],
+                "range": "Yoyo"
+            }, {
+                "title": "Yoyo (M)",
+                "strapline": "Portable Stereo Bluetooth Speaker",
+                "nid": "9992",
+                "url": "\/products\/speakers\/tv5",
+                "keywords": ["Portable"],
+                "range": "Yoyo"
+            }, {
+                "title": "Yoyo (L)",
+                "strapline": "All-In-One Home Audio System",
+                "nid": "9993",
+                "url": "\/products\/speakers\/tv2-v2",
+                "range": "Yoyo"
+            }]
         }]
     }, {
         "tid": "1171",
@@ -360,22 +425,25 @@ var data = {
                 "title": "CXR200",
                 "strapline": "200W AV Receiver",
                 "nid": "4008",
-                "url": "\/products\/cx\/cxr200"
+                "url": "\/products\/cx\/cxr200",
+                "range": "CX"
             }, {
                 "title": "CXR120",
                 "strapline": "120W AV Receiver",
                 "nid": "4079",
-                "url": "\/products\/cx\/cxr120"
+                "url": "\/products\/cx\/cxr120",
+                "range": "CX"
             }]
         }, {
             "tid": "1173",
-            "title": "Our Universal Player",
+            "title": "Bluray Player",
             "machine_title": "our_universal_player",
             "products": [{
                 "title": "CXU",
                 "strapline": "Our best ever universal Blu-Ray player",
                 "nid": "3987",
-                "url": "\/products\/cx\/cxu"
+                "url": "\/products\/cx\/cxu",
+                "range": "CX"
             }]
         }, {
             "tid": "1174",
@@ -386,7 +454,7 @@ var data = {
             ]
         }, {
             "tid": "1175",
-            "title": "TV Sound",
+            "title": "TV Speakers",
             "machine_title": "tv_sound",
             "products": [{
                 "title": "TV2 (v1)",
@@ -414,25 +482,6 @@ var data = {
                 "nid": "4550",
                 "url": "\/products\/tv-sound\/tvb2"
             }]
-        }]
-    }, {
-        "tid": "1176",
-        "title": "Wireless Sound",
-        "machine_title": "wireless_sound",
-        "child-category": [{
-            "tid": "5745",
-            "title": "Yoyo",
-            "machine_title": "yoyo",
-            "products": [
-
-            ]
-        }, {
-            "tid": "5746",
-            "title": "All",
-            "machine_title": "all",
-            "products": [
-
-            ]
         }]
     }]
 }

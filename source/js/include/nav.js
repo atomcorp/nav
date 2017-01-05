@@ -38,23 +38,21 @@ function dropdownProducts(categoryName) {
 		// look 
 		for (var i = 0; i < $g.nav.length; i++) {
 			var subCategory = $g.nav[i];
-			if (subCategory.machine_title === categoryName) {
-				console.log(subCategory.machine_title, categoryName);
-				// add stuff from here
 
-				// start again here!!!!!!!!!!!!!!!!!!!!
-			}
-			for (var x = 0; x < subCategory['child-category'].length; x++) {
-				if (subCategory['child-category'][x].title === categoryName) {
+			// eg hi-fi == hi-fi
+			if (subCategory.machine_title === categoryName) {
+				var $domSubcategory = $('.dropdown-container[data-dropdown="' + subCategory.machine_title + '"]').find('.dropdown__subcategories ul');
+				for (var x = 0; x < subCategory['child-category'].length; x++) {
+					// print all subcategories if not range
+					if (subCategory['child-category'][x].type != 'range') {
+						
+						$domSubcategory.append('<li>' + subCategory['child-category'][x].title + '</li>');
+					}
+					var $domProduct = $('.dropdown-container[data-dropdown="' + subCategory.machine_title + '"]').find('.dropdown__products ul');
 					var products = subCategory['child-category'][x].products;
 					for (var y = 0; y < products.length; y++) {
-						if ($('.generic__products').length) {
-							// also add strapline
-							// add link (to another generic page?)
-							$('.generic__products ul').append('<li><a href="/app/product" class="hash-link">' +  + '</a></li>');
-						}
+						$domProduct.append('<li>' + products[y].title + '</li>');
 					}
-					break;
 				}
 			}
 		}

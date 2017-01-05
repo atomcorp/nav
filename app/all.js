@@ -22,6 +22,8 @@ var data = {
 
             "machine_title": "851_series",
 
+            "type": "range",
+
             "products": [
 
 
@@ -35,6 +37,8 @@ var data = {
             "title": "CX Series",
 
             "machine_title": "cx_series",
+
+            "type": "range",
 
             "products": [
 
@@ -58,7 +62,11 @@ var data = {
 
                 "nid": "3799",
 
-                "url": "\/products\/cx\/cxn"
+                "url": "\/products\/cx\/cxn",
+
+                "keywords": ["Integrated"],
+
+                "range": "CX"
 
             }, {
 
@@ -68,7 +76,11 @@ var data = {
 
                 "nid": "3872",
 
-                "url": "\/products\/network-players\/minx-xi"
+                "url": "\/products\/network-players\/minx-xi",
+
+                "keywords": ["Power Amp"],
+
+                "range": "Minx"
 
             }, {
 
@@ -78,7 +90,11 @@ var data = {
 
                 "nid": "3898",
 
-                "url": "\/products\/851\/851n"
+                "url": "\/products\/851\/851n",
+
+                "keywords": ["Power Amp"],
+
+                "range": "851"
 
             }]
 
@@ -98,7 +114,11 @@ var data = {
 
                 "nid": "3987",
 
-                "url": "\/products\/cx\/cxu"
+                "url": "\/products\/cx\/cxu",
+
+                "keywords": ["Power Amp"],
+
+                "range": "CX"
 
             }, {
 
@@ -108,7 +128,9 @@ var data = {
 
                 "nid": "4003",
 
-                "url": "\/products\/cx\/cxc"
+                "url": "\/products\/cx\/cxc",
+
+                "range": "CX"
 
             }, {
 
@@ -118,7 +140,11 @@ var data = {
 
                 "nid": "4085",
 
-                "url": "\/products\/851\/851c"
+                "url": "\/products\/851\/851c",
+
+                "keywords": ["With DAC"],
+
+                "range": "851"
 
             }, {
 
@@ -128,7 +154,9 @@ var data = {
 
                 "nid": "4261",
 
-                "url": "\/products\/hifi-and-home-cinema\/topaz-cd10"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-cd10",
+
+                "range": "Topaz"
 
             }, {
 
@@ -138,7 +166,11 @@ var data = {
 
                 "nid": "4264",
 
-                "url": "\/products\/hifi-and-home-cinema\/topaz-cd5"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-cd5",
+
+                "keywords": ["With DAC"],
+
+                "range": "Topaz"
 
             }, {
 
@@ -168,7 +200,9 @@ var data = {
 
                 "nid": "3995",
 
-                "url": "\/products\/cx\/cxa80"
+                "url": "\/products\/cx\/cxa80",
+
+                "range": "CX"
 
             }, {
 
@@ -178,7 +212,9 @@ var data = {
 
                 "nid": "4075",
 
-                "url": "\/products\/cx\/cxa60"
+                "url": "\/products\/cx\/cxa60",
+
+                "range": "CX"
 
             }, {
 
@@ -188,7 +224,9 @@ var data = {
 
                 "nid": "4099",
 
-                "url": "\/products\/851\/851a"
+                "url": "\/products\/851\/851a",
+
+                "range": "851"
 
             }, {
 
@@ -198,7 +236,9 @@ var data = {
 
                 "nid": "4110",
 
-                "url": "\/products\/851\/851w"
+                "url": "\/products\/851\/851w",
+
+                "range": "851"
 
             }, {
 
@@ -208,7 +248,9 @@ var data = {
 
                 "nid": "4118",
 
-                "url": "\/products\/851\/851e"
+                "url": "\/products\/851\/851e",
+
+                "range": "851"
 
             }, {
 
@@ -218,7 +260,9 @@ var data = {
 
                 "nid": "4128",
 
-                "url": "\/products\/hifi-and-home-cinema\/topaz-am5"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-am5",
+
+                "range": "Topaz"
 
             }, {
 
@@ -228,7 +272,9 @@ var data = {
 
                 "nid": "4130",
 
-                "url": "\/products\/hifi-and-home-cinema\/topaz-sr10"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-sr10",
+
+                "range": "Topaz"
 
             }, {
 
@@ -238,7 +284,9 @@ var data = {
 
                 "nid": "4134",
 
-                "url": "\/products\/hifi-and-home-cinema\/topaz-sr20"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-sr20",
+
+                "range": "Topaz"
 
             }, {
 
@@ -248,7 +296,9 @@ var data = {
 
                 "nid": "4135",
 
-                "url": "\/products\/hifi-and-home-cinema\/topaz-am10"
+                "url": "\/products\/hifi-and-home-cinema\/topaz-am10",
+
+                "range": "Topaz"
 
             }, {
 
@@ -308,7 +358,9 @@ var data = {
 
                 "nid": "3868",
 
-                "url": "\/products\/851\/851d"
+                "url": "\/products\/851\/851d",
+
+                "range": "851"
 
             }]
 
@@ -378,7 +430,11 @@ var data = {
 
                 "nid": "3872",
 
-                "url": "\/products\/network-players\/minx-xi"
+                "url": "\/products\/network-players\/minx-xi",
+
+                "range": "Minx"
+
+
 
             }, {
 
@@ -448,7 +504,9 @@ var data = {
 
                 "nid": "4240",
 
-                "url": "\/products\/speakers\/aero-6"
+                "url": "\/products\/speakers\/aero-6",
+
+                "range": "Aero"
 
             }, {
 
@@ -458,7 +516,9 @@ var data = {
 
                 "nid": "4315",
 
-                "url": "\/products\/speakers\/aeromax-6"
+                "url": "\/products\/speakers\/aeromax-6",
+
+                "range": "Aeromax"
 
             }]
 
@@ -488,7 +548,9 @@ var data = {
 
                 "nid": "4247",
 
-                "url": "\/products\/speakers\/aero-2"
+                "url": "\/products\/speakers\/aero-2",
+
+                "range": "Aero"
 
             }, {
 
@@ -498,7 +560,9 @@ var data = {
 
                 "nid": "4311",
 
-                "url": "\/products\/speakers\/aeromax-2"
+                "url": "\/products\/speakers\/aeromax-2",
+
+                "range": "Aeromax"
 
             }]
 
@@ -528,7 +592,9 @@ var data = {
 
                 "nid": "4308",
 
-                "url": "\/products\/speakers\/minx-xl"
+                "url": "\/products\/speakers\/minx-xl",
+
+                "range": "Minx"
 
             }, {
 
@@ -538,7 +604,9 @@ var data = {
 
                 "nid": "4344",
 
-                "url": "\/products\/speakers\/minx-min-12"
+                "url": "\/products\/speakers\/minx-min-12",
+
+                "range": "Minx"
 
             }, {
 
@@ -548,7 +616,9 @@ var data = {
 
                 "nid": "4354",
 
-                "url": "\/products\/speakers\/minx-min-22"
+                "url": "\/products\/speakers\/minx-min-22",
+
+                "range": "Minx"
 
             }]
 
@@ -568,7 +638,9 @@ var data = {
 
                 "nid": "4281",
 
-                "url": "\/products\/speakers\/aero-3"
+                "url": "\/products\/speakers\/aero-3",
+
+                "range": "Aero"
 
             }, {
 
@@ -588,7 +660,9 @@ var data = {
 
                 "nid": "4384",
 
-                "url": "\/products\/speakers\/aero-5"
+                "url": "\/products\/speakers\/aero-5",
+
+                "range": "Aero"
 
             }]
 
@@ -608,7 +682,9 @@ var data = {
 
                 "nid": "4290",
 
-                "url": "\/products\/speakers\/aero-9"
+                "url": "\/products\/speakers\/aero-9",
+
+                "range": "Aero"
 
             }, {
 
@@ -628,7 +704,9 @@ var data = {
 
                 "nid": "4369",
 
-                "url": "\/products\/speakers\/minx-x201"
+                "url": "\/products\/speakers\/minx-x201",
+
+                "range": "Minx"
 
             }, {
 
@@ -638,7 +716,9 @@ var data = {
 
                 "nid": "4370",
 
-                "url": "\/products\/speakers\/minx-x301"
+                "url": "\/products\/speakers\/minx-x301",
+
+                "range": "Minx"
 
             }]
 
@@ -702,6 +782,56 @@ var data = {
 
             }]
 
+        },{
+
+            "tid": "5745",
+
+            "title": "Wireless",
+
+            "machine_title": "wireless",
+
+            "products": [{
+
+                "title": "Yoyo (S)",
+
+                "strapline": "Portable Bluetooth Speaker",
+
+                "nid": "9991",
+
+                "url": "\/products\/speakers\/tv2",
+
+                "keywords": ["Portable"],
+
+                "range": "Yoyo"
+
+            }, {
+
+                "title": "Yoyo (M)",
+
+                "strapline": "Portable Stereo Bluetooth Speaker",
+
+                "nid": "9992",
+
+                "url": "\/products\/speakers\/tv5",
+
+                "keywords": ["Portable"],
+
+                "range": "Yoyo"
+
+            }, {
+
+                "title": "Yoyo (L)",
+
+                "strapline": "All-In-One Home Audio System",
+
+                "nid": "9993",
+
+                "url": "\/products\/speakers\/tv2-v2",
+
+                "range": "Yoyo"
+
+            }]
+
         }]
 
     }, {
@@ -728,7 +858,9 @@ var data = {
 
                 "nid": "4008",
 
-                "url": "\/products\/cx\/cxr200"
+                "url": "\/products\/cx\/cxr200",
+
+                "range": "CX"
 
             }, {
 
@@ -738,7 +870,9 @@ var data = {
 
                 "nid": "4079",
 
-                "url": "\/products\/cx\/cxr120"
+                "url": "\/products\/cx\/cxr120",
+
+                "range": "CX"
 
             }]
 
@@ -746,7 +880,7 @@ var data = {
 
             "tid": "1173",
 
-            "title": "Our Universal Player",
+            "title": "Bluray Player",
 
             "machine_title": "our_universal_player",
 
@@ -758,7 +892,9 @@ var data = {
 
                 "nid": "3987",
 
-                "url": "\/products\/cx\/cxu"
+                "url": "\/products\/cx\/cxu",
+
+                "range": "CX"
 
             }]
 
@@ -780,7 +916,7 @@ var data = {
 
             "tid": "1175",
 
-            "title": "TV Sound",
+            "title": "TV Speakers",
 
             "machine_title": "tv_sound",
 
@@ -835,44 +971,6 @@ var data = {
                 "url": "\/products\/tv-sound\/tvb2"
 
             }]
-
-        }]
-
-    }, {
-
-        "tid": "1176",
-
-        "title": "Wireless Sound",
-
-        "machine_title": "wireless_sound",
-
-        "child-category": [{
-
-            "tid": "5745",
-
-            "title": "Yoyo",
-
-            "machine_title": "yoyo",
-
-            "products": [
-
-
-
-            ]
-
-        }, {
-
-            "tid": "5746",
-
-            "title": "All",
-
-            "machine_title": "all",
-
-            "products": [
-
-
-
-            ]
 
         }]
 
@@ -1004,26 +1102,170 @@ function dropdownProducts(categoryName) {
 		// look 
 		for (var i = 0; i < $g.nav.length; i++) {
 			var subCategory = $g.nav[i];
-			if (subCategory.machine_title === categoryName) {
-				console.log(subCategory.machine_title, categoryName);
-				// add stuff from here
 
-				// start again here!!!!!!!!!!!!!!!!!!!!
-			}
-			for (var x = 0; x < subCategory['child-category'].length; x++) {
-				if (subCategory['child-category'][x].title === categoryName) {
+			// eg hi-fi == hi-fi
+			if (subCategory.machine_title === categoryName) {
+				var $domSubcategory = $('.dropdown-container[data-dropdown="' + subCategory.machine_title + '"]').find('.dropdown__subcategories ul');
+				for (var x = 0; x < subCategory['child-category'].length; x++) {
+					// print all subcategories if not range
+					if (subCategory['child-category'][x].type != 'range') {
+						
+						$domSubcategory.append('<li>' + subCategory['child-category'][x].title + '</li>');
+					}
+					var $domProduct = $('.dropdown-container[data-dropdown="' + subCategory.machine_title + '"]').find('.dropdown__products ul');
 					var products = subCategory['child-category'][x].products;
 					for (var y = 0; y < products.length; y++) {
-						if ($('.generic__products').length) {
-							// also add strapline
-							// add link (to another generic page?)
-							$('.generic__products ul').append('<li><a href="/app/product" class="hash-link">' +  + '</a></li>');
-						}
+						$domProduct.append('<li>' + products[y].title + '</li>');
 					}
-					break;
 				}
 			}
 		}
+	}
+}
+function popFilterCategories() {
+	var $domFilter = $('.filter__categories');
+
+	var loopThis = data.navigation;
+
+	for (var i = 0; i < loopThis.length; i++) {
+		var subCategory = loopThis[i];
+		for (var x = 0; x < subCategory['child-category'].length; x++) {
+			if (subCategory['child-category'][x].type != "range") {
+				var category = subCategory['child-category'][x].title;
+				$domFilter.append('<div class="filter__category">' + category + '</div>');
+
+			}
+		}
+	}
+}
+
+/*
+
+Filter actions
+
+- Systems: click on Hi-Fi  -> only Cats under Hi-Fi highlighted / only Ranges with Products in Hi-Fi
+- Categories: click only if highlighted -> 
+
+Filter Tasks
+
+- get all the products, define them 
+
+*/
+
+function setFilterCriteria() {
+	// when someone clicks
+	// get what System selected
+	// get what categories selected
+	var selections = {};
+	$.each($('.filter__category'), function(index, val) {
+		if ($(this).hasClass('selected')) {
+			selections.categories = $(this).text();
+		}
+	});
+	$.each($('.filter__heading'), function(index, val) {
+		if ($(this).hasClass('selected')) {
+			selections.systems = $(this).text();
+		}
+	});
+	return selections;
+}
+
+// hifi, home cinema, speakers
+$(document).on('click', '.filter__heading', function(event) {
+	event.preventDefault();
+	var $this = $(this);
+	var type = $this.text(); 
+	if (!$this.hasClass('selected')) {
+		$this.addClass('selected');
+		$this.siblings().removeClass('selected');
+	} else {
+		$this.removeClass('selected');
+		type = 'All';
+		$(".filter__heading:contains('All')").addClass('selected');
+	}
+	// deselect uneligible categories if necessary
+	if (type !== 'All') {
+		$('.filter__category').addClass('inactive');
+		$('.filter__category[data-system="'+ type + '"]').removeClass('inactive');
+	} else {
+		$('.filter__category').removeClass('inactive');
+	}
+	// dust up any that should be circled
+	$('.filter__category.selected.inactive').removeClass('selected');
+	// get what the filters are
+	var filters = setFilterCriteria();
+	getEligibleProducts(filters);
+	//	use filters to 
+
+});
+
+// categories
+$(document).on('click', '.filter__category', function(event) {
+	event.preventDefault();
+	var $this = $(this);
+	if (!$this.hasClass('inactive')) {
+		if (!$this.hasClass('selected')) {
+			$this.addClass('selected');
+			$this.siblings().removeClass('selected');
+		} else {
+			$this.removeClass('selected');
+		}
+		// get what the filters are
+		var filters = setFilterCriteria();
+		getEligibleProducts(filters);
+	}
+});
+
+function getEligibleProducts(filters) {
+	// get data
+	var cachedData = data.navigation;
+	var results = [];
+	var products = [];
+	// select home cinema
+	if (filters.systems && !filters.categories) {
+		if (filters.systems !== "All")  {
+			for (var i = 0; i < cachedData.length; i++) {
+				if (cachedData[i].title === filters.systems) {
+					results.push(cachedData[i]);
+				}
+			}
+		} else {
+			results = cachedData;
+		}
+		for (var i = 0; i < results.length; i++) {
+
+			for (var x = 0; x < results[i]['child-category'].length; x++) {
+
+				for (var y = 0; y < results[i]['child-category'][x].products.length; y++) {
+					products.push('<div>' +  results[i]['child-category'][x].products[y].title + '</div>');
+				}
+			}
+		}
+	} else {
+		// also look at categories
+		for (var i = 0; i < cachedData.length; i++) {
+
+			for (var x = 0; x < cachedData[i]['child-category'].length; x++) {
+
+
+				if (cachedData[i]['child-category'][x].title === filters.categories) {
+
+					for (var y = 0; y < cachedData[i]['child-category'][x].products.length; y++) {
+						products.push('<div>' +  cachedData[i]['child-category'][x].products[y].title + '</div>');
+					}
+				}
+			}
+		}
+	}
+	
+	var $list = $('.results-list');
+	if (products.length) {
+		$list.html('');
+		for (var i = 0; i < products.length; i++) {
+			$list.append(products[i])
+		}
+	} else {
+		$list.html('<div>' +  'No results' + '</div>');
 	}
 }
 
