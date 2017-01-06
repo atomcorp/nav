@@ -422,50 +422,49 @@
 
 	<!-- You write code for this content block in another file -->
 	
-	<div class="container">
+	
+<!-- With tabs -->
+
+
+<div class="container">
 	<h1>PRODUCTS</h1>
 </div>
 <br><br>
 <div class="container">
 	<div class="filter">
-		<div class="filter__group">
+		<div class="filter__group filter__group--tabs">
 			<div class="filter__title">
-				<h2>Systems</h2>
+				<h2>Filter</h2>
 			</div>
 			<div class="filter__headings">
-				<div class="filter__heading selected">All</div>
-				<div class="filter__heading">Hi-Fi</div>
-				<div class="filter__heading">Speakers</div>
-				<div class="filter__heading">Home Cinema</div>
+				<div class="filter__heading filter__heading--tabs">Hi-Fi</div>
+				<div class="filter__heading filter__heading--tabs">Speakers</div>
+				<div class="filter__heading filter__heading--tabs">Home Cinema</div>
+				<div class="filter__heading filter__heading--tabs selected">All</div>
+			</div>
+			<div class="filter__categories filter__categories--tabs box">
+				<div class="filter__category filter__category--tabs inactive" data-system="Hi-Fi">Network Players</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Hi-Fi">Disc Players</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Hi-Fi">Amplifiers</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Hi-Fi">DACs</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Hi-Fi">Phono Stages</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Hi-Fi">All-in-one Systems</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Hi-Fi">SE1</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Speakers">Floor Standing</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Speakers">Standmount</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Speakers">Bookshelf</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Speakers">Surround</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Speakers">Subwoofers</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Speakers">In-Ceiling</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Speakers">Wireless</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Home Cinema">AV Receivers</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Home Cinema">Bluray Player</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Home Cinema">Surround Speakers</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Home Cinema">Subwoofers</div>
+				<div class="filter__category filter__category--tabs inactive" data-system="Home Cinema">TV Speakers</div>
 			</div>
 		</div>
-		<div class="filter__group">
-			<div class="filter__title">
-				<h2>Categories</h2>
-			</div>
-			<div class="filter__categories">
-				<div class="filter__category" data-system="Hi-Fi">Network Players</div>
-				<div class="filter__category" data-system="Hi-Fi">Disc Players</div>
-				<div class="filter__category" data-system="Hi-Fi">Amplifiers</div>
-				<div class="filter__category" data-system="Hi-Fi">DACs</div>
-				<div class="filter__category" data-system="Hi-Fi">Phono Stages</div>
-				<div class="filter__category" data-system="Hi-Fi">All-in-one Systems</div>
-				<div class="filter__category" data-system="Hi-Fi">SE1</div>
-				<div class="filter__category" data-system="Speakers">Floor Standing</div>
-				<div class="filter__category" data-system="Speakers">Standmount</div>
-				<div class="filter__category" data-system="Speakers">Bookshelf</div>
-				<div class="filter__category" data-system="Speakers">Surround</div>
-				<div class="filter__category" data-system="Speakers">Subwoofers</div>
-				<div class="filter__category" data-system="Speakers">In-Ceiling</div>
-				<div class="filter__category" data-system="Speakers">Wireless</div>
-				<div class="filter__category" data-system="Home Cinema">AV Receivers</div>
-				<div class="filter__category" data-system="Home Cinema">Bluray Player</div>
-				<div class="filter__category" data-system="Home Cinema">Surround Speakers</div>
-				<div class="filter__category" data-system="Home Cinema">Subwoofers</div>
-				<div class="filter__category" data-system="Home Cinema">TV Speakers</div>
-			</div>
-		</div>
-		<div class="filter__group">
+		<div class="filter__group hide">
 			<div class="filter__title">
 				<h2>Ranges</h2>
 			</div>
@@ -483,7 +482,7 @@
 			</div>
 
 		</div>
-		<div class="filter__group">
+		<div class="filter__group hide">
 			<div class="filter__title">
 				<h2>Features</h2>
 			</div>
@@ -504,9 +503,12 @@
 		</div>
 	</div>
 </div>
-
+<br>
+<br>
+<br>
 <div class="container">
 	<h2>Results</h2>
+
 	<div class="results-list">
 		
 	</div>

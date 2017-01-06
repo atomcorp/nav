@@ -1072,16 +1072,16 @@ $(document).on('click', '.dropdown-link', function(event) {
 	if (!$this.hasClass('open')) {
 		// reset
 		$dropdownLinks.removeClass('open');
-		$dropdowns.removeClass('animated fadeInLeft');
+		$dropdowns.removeClass('animated fadeInDown');
 		$arrows.removeClass('active');
 		// activate this one
 		$this.addClass('open');
 		$this.find('.direction-arrow').addClass('active');
-		$('.dropdown-container[data-dropdown="' + id + '"]').removeClass('hide').addClass('animated fadeInLeft');
+		$('.dropdown-container[data-dropdown="' + id + '"]').removeClass('hide').addClass('animated fadeInDown');
 	} else {
 		$this.removeClass('open');
 		$this.find('.direction-arrow').removeClass('active');
-		$dropdowns.removeClass('animated fadeInLeft');
+		$dropdowns.removeClass('animated fadeInDown');
 	}
 });
 
@@ -1114,9 +1114,9 @@ function dropdownProducts(categoryName) {
 					}
 					var $domProduct = $('.dropdown-container[data-dropdown="' + subCategory.machine_title + '"]').find('.dropdown__products ul');
 					var products = subCategory['child-category'][x].products;
-					for (var y = 0; y < products.length; y++) {
-						$domProduct.append('<li>' + products[y].title + '</li>');
-					}
+					// for (var y = 0; y < products.length; y++) {
+					// 	$domProduct.append('<li>' + products[y].title + '</li>');
+					// }
 				}
 			}
 		}
@@ -1237,7 +1237,7 @@ function getEligibleProducts(filters) {
 			for (var x = 0; x < results[i]['child-category'].length; x++) {
 
 				for (var y = 0; y < results[i]['child-category'][x].products.length; y++) {
-					products.push('<div>' +  results[i]['child-category'][x].products[y].title + '</div>');
+					products.push('<div class="box">' +  results[i]['child-category'][x].products[y].title + '</div>');
 				}
 			}
 		}
@@ -1251,7 +1251,7 @@ function getEligibleProducts(filters) {
 				if (cachedData[i]['child-category'][x].title === filters.categories) {
 
 					for (var y = 0; y < cachedData[i]['child-category'][x].products.length; y++) {
-						products.push('<div>' +  cachedData[i]['child-category'][x].products[y].title + '</div>');
+						products.push('<div class="box">' +  cachedData[i]['child-category'][x].products[y].title + '</div>');
 					}
 				}
 			}

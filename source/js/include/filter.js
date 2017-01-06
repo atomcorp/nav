@@ -113,7 +113,7 @@ function getEligibleProducts(filters) {
 			for (var x = 0; x < results[i]['child-category'].length; x++) {
 
 				for (var y = 0; y < results[i]['child-category'][x].products.length; y++) {
-					products.push('<div>' +  results[i]['child-category'][x].products[y].title + '</div>');
+					products.push('<div class="box">' +  results[i]['child-category'][x].products[y].title + '</div>');
 				}
 			}
 		}
@@ -127,7 +127,7 @@ function getEligibleProducts(filters) {
 				if (cachedData[i]['child-category'][x].title === filters.categories) {
 
 					for (var y = 0; y < cachedData[i]['child-category'][x].products.length; y++) {
-						products.push('<div>' +  cachedData[i]['child-category'][x].products[y].title + '</div>');
+						products.push('<div class="box">' +  cachedData[i]['child-category'][x].products[y].title + '</div>');
 					}
 				}
 			}
