@@ -97,7 +97,6 @@ $(document).on('click', '.filter__category.filter__category--tabs', function(eve
 		} else {
 			$this.removeClass('selected');
 		}
-		console.log($this.data('feature-link'));
 
 		// check it's not something that uses a feature
 		$('.filter__feature').addClass('hide');
@@ -140,7 +139,10 @@ function getEligibleProducts(filters) {
 			for (var x = 0; x < results[i]['child-category'].length; x++) {
 
 				for (var y = 0; y < results[i]['child-category'][x].products.length; y++) {
-					products.push('<div class="box">' +  results[i]['child-category'][x].products[y].title + '</div>');
+					var name = cachedData[i]['child-category'][x].products[y].title;
+					var price = cachedData[i]['child-category'][x].products[y].nid;
+					var strapline = cachedData[i]['child-category'][x].products[y].strapline;
+					products.push(productMarkup(name, price, strapline));
 				}
 			}
 		}
@@ -154,24 +156,47 @@ function getEligibleProducts(filters) {
 				if (cachedData[i]['child-category'][x].title === filters.categories) {
 
 					for (var y = 0; y < cachedData[i]['child-category'][x].products.length; y++) {
-						products.push('<div class="box">' +  cachedData[i]['child-category'][x].products[y].title + '</div>');
+						var name = cachedData[i]['child-category'][x].products[y].title;
+						var price = cachedData[i]['child-category'][x].products[y].nid;
+						var strapline = cachedData[i]['child-category'][x].products[y].strapline;
+						products.push(productMarkup(name, price, strapline));
+						
 					}
 				}
 			}
 		}
 	}
-	
 	var $list = $('.results-list');
 	if (products.length) {
 		$list.html('');
 		for (var i = 0; i < products.length; i++) {
 			$list.append(products[i])
 		}
+		$('.found-count--number').text($('.results-list .result---product').length);
+
 	} else {
 		$list.html('<div>' +  'No results' + '</div>');
+		$('.found-count--number').text('0');
 	}
 }
 
+var productMarkup = function(name, price, strapline) {
+	var back1 = 'img--dots';
+	var back2 = 'img--blueprint';
+	var back3 = 'img--cross';
+	var back = back1;
+	// var num = Math.random();
+	var num = Math.random().toFixed(2) * 100;
+	var random = Math.random();
+	if (random > 0.3 && random < 0.7) {
+		back = back2;
+		num = num.toFixed(2) * 100;
+	} else if (random > 0.7) {
+		back = back3;
+		num = num.toFixed(1) * 10;
+	}
+ 	return '<div class="result---product"><div class="box"><div class="dropdown__product--img"><div class="dropdown-img box ' + back + '"></div></div><div class="dropdown__product--heading"><div class="dropdown__product--title">' + name + '</div><div class="dropdown__product--price">£' + num + '</div></div><div class="dropdown__product--strapline">' + strapline + '</div></div></div>';
+}
 
 if ($('.filter').length) {
 	$('.filter__heading.selected').trigger('click');
@@ -192,6 +217,5 @@ function hashSelectFilter() {
 		hash === 'hifi' ? $('.products-title').text('Hi-fi') : false;
 		hash === 'speakers' ? $('.products-title').text('Speakers') : false;
 		hash === 'home' ? $('.products-title').text('Home cinema') : false;
-		console.log(hash)
 	}
 }

@@ -10,6 +10,16 @@
 	display: none;
 }
 
+p {
+	line-height: 1.5em;
+}
+
+select {
+	font-family: 'Gloria Hallelujah', cursive;
+	color: #41403E; 
+	font-weight: 800;
+}
+
 @media (min-width: 768px) {
 	.container {
 	    width: 750px;

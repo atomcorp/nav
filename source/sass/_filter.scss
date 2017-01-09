@@ -55,6 +55,14 @@
 	padding: 15px;
 }
 
+.filter__feature--label {
+	margin: 0 15px 0 0;
+	padding: 15px;
+	color: #333;
+	color: #a79b9b;
+    text-transform: uppercase;
+}
+
 .filter__range--label {
 	margin: 0 15px 0 0;
 	padding: 15px;
@@ -106,10 +114,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 15px;
-	& > * {
-		padding: 15px;
-		margin: 0 15px 15px 0;
-	}
 }
 
 // tabs
@@ -151,12 +155,35 @@
 
 .filter__heading.selected {
 }
+
 .toolbar {
     display: flex;
     border-bottom: 4px solid;
     border-radius: 255px 15px 255px 15px/15px 255px 15px 255px; 
     padding: 15px;
     select {
-    	margin: 0 0 0 auto;
+    	padding: 8px 15px;
     }
+}
+
+// results
+
+.result---product {
+	padding: 15px;
+	width: calc(25% - 30px);
+}
+
+.toolbar--corner {
+	display: flex;
+	margin: 0 0 0 auto;
+	padding: 8px 15px;
+	align-items: center;
+}
+
+.found-count {
+	padding: 16px 15px;
+	margin: 0 15px 0 0;
+	span {
+		padding: 4px 15px;
+	}
 }

@@ -91,6 +91,7 @@
 		<div class="toolbar">
 			<div class="filter__group hide features-group">
 				<div class="filter__features">
+					<div class="filter__feature--label">Features</div>
 					<div class="filter__feature hide" data-feature="Amplifiers">Integrated</div>
 					<div class="filter__feature hide" data-feature="Amplifiers">Power Amp</div>
 					<div class="filter__feature hide" data-feature="Amplifiers">AV Receiver</div>
@@ -104,12 +105,17 @@
 					<div class="filter__feature hide" data-feature="Wireless">TV Compatible</div>
 				</div>
 			</div>
-			<select class="box" name="" id="">
-				<option value="1">Expensive</option>
-				<option value="2">Cheap</option>
-				<option value="3">New</option>
-				<option value="3">Old</option>
-			</select>
+			<div class="toolbar--corner">
+				<div class="found-count round">
+					Products found:&nbsp;<span class="found-count--number"></span>
+				</div>
+				<select class="round" name="" id="">
+					<option value="1">Expensive</option>
+					<option value="2">Cheap</option>
+					<option value="3">New</option>
+					<option value="3">Old</option>
+				</select>
+			</div>
 		</div>
 
 		<div class="results-list">
