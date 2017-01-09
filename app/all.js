@@ -1122,6 +1122,7 @@ function dropdownProducts(categoryName) {
 		}
 	}
 }
+
 function popFilterCategories() {
 	var $domFilter = $('.filter__categories');
 
@@ -1183,12 +1184,23 @@ $(document).on('click', '.filter__heading', function(event) {
 		type = 'All';
 		$(".filter__heading:contains('All')").addClass('selected');
 	}
+	$('.features-group').addClass('hide');
 	// deselect uneligible categories if necessary
 	if (type !== 'All') {
 		$('.filter__category').addClass('inactive');
 		$('.filter__category[data-system="'+ type + '"]').removeClass('inactive');
+		$('.filter__range').addClass('inactive');
+		$('.filter__range[data-system="'+ type + '"]').removeClass('inactive');
 	} else {
 		$('.filter__category').removeClass('inactive');
+		$('.filter__range').removeClass('inactive');
+		$('.filter__range').addClass('inactive');
+	}
+	// check if range label needs to show
+	if ($('.filter__range.inactive').length === $('.filter__range').length) {
+		$('.filter__range--label').addClass('inactive');
+	} else {
+		$('.filter__range--label').removeClass('inactive');
 	}
 	// dust up any that should be circled
 	$('.filter__category.selected.inactive').removeClass('selected');
@@ -1200,7 +1212,7 @@ $(document).on('click', '.filter__heading', function(event) {
 });
 
 // categories
-$(document).on('click', '.filter__category', function(event) {
+$(document).on('click', '.filter__category.filter__category--tabs', function(event) {
 	event.preventDefault();
 	var $this = $(this);
 	if (!$this.hasClass('inactive')) {
@@ -1210,6 +1222,22 @@ $(document).on('click', '.filter__category', function(event) {
 		} else {
 			$this.removeClass('selected');
 		}
+		console.log($this.data('feature-link'));
+
+		// check it's not something that uses a feature
+		$('.filter__feature').addClass('hide');
+
+		if ($this.data('feature-link') === "Amplifiers") {
+			$('.features-group').removeClass('hide');
+			$('.filter__feature[data-feature="Amplifiers"]').removeClass('hide');
+		} else if ($this.data('feature-link') === "Wireless") {
+			$('.features-group').removeClass('hide');
+			$('.filter__feature[data-feature="Wireless"]').removeClass('hide');
+		} else {
+			$('.features-group').addClass('hide');
+			$('.filter__feature').addClass('hide');
+		}
+
 		// get what the filters are
 		var filters = setFilterCriteria();
 		getEligibleProducts(filters);
@@ -1269,6 +1297,29 @@ function getEligibleProducts(filters) {
 	}
 }
 
-$('.filter__heading.selected').trigger('click');
+
+if ($('.filter').length) {
+	$('.filter__heading.selected').trigger('click');
+	hashSelectFilter();
+}
+
+function hashSelectFilter() {
+	// grab hash and remove #
+	var hash = window.location.hash;
+	if (hash.substring(0, 1) == '#') { 
+		hash = hash.substring(1);
+	}
+
+	// look at a hash and the trigger respective tab	
+	$('.filter__heading--tabs[data-nav-hash="' + hash + '"]').trigger('click');
+
+	if (hash.length > 0) {
+		hash === 'hifi' ? $('.products-title').text('Hi-fi') : false;
+		hash === 'speakers' ? $('.products-title').text('Speakers') : false;
+		hash === 'home' ? $('.products-title').text('Home cinema') : false;
+		console.log(hash)
+	}
+}
+
 
 }); // END JQUERY
