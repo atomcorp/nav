@@ -59,7 +59,7 @@ $(document).on('click', '.filter__heading', function(event) {
 		type = 'All';
 		$(".filter__heading:contains('All')").addClass('selected');
 	}
-
+	$('.features-group').addClass('hide');
 	// deselect uneligible categories if necessary
 	if (type !== 'All') {
 		$('.filter__category').addClass('inactive');
@@ -99,6 +99,8 @@ $(document).on('click', '.filter__category.filter__category--tabs', function(eve
 		}
 
 		// check it's not something that uses a feature
+		$('.filter__feature').addClass('hide');
+
 		if ($this.data('feature-link') === "Amplifiers") {
 			$('.features-group').removeClass('hide');
 			$('.filter__feature[data-feature="Amplifiers"]').removeClass('hide');
@@ -106,8 +108,8 @@ $(document).on('click', '.filter__category.filter__category--tabs', function(eve
 			$('.features-group').removeClass('hide');
 			$('.filter__feature[data-feature="Wireless"]').removeClass('hide');
 		} else {
-			$('.features-group').removeClass('hide');
-			$('.filter__feature').removeClass('hide');
+			$('.features-group').addClass('hide');
+			$('.filter__feature').addClass('hide');
 		}
 
 		// get what the filters are

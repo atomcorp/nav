@@ -30,7 +30,7 @@
 .filter__category {
 	margin: 0 15px 0 0;
 	padding: 15px;
-	border: 4px solid #fff;
+	border: 4px solid transparent;
 	cursor: pointer;
 	&:hover {
 		border-radius: 255px 145px 255px 125px/125px 255px 145px 255px;
@@ -116,6 +116,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 15px;
+	background: #fff;
 }
 
 // tabs
@@ -131,10 +132,15 @@
 
 }
 
+.filter__content {
+	overflow: hidden;
+	border-radius: 100px 15px 15px 255px/7px 255px 255px 15px;
+}
+
 .filter__categories--tabs {
 	position: relative;
-	padding: 15px;
-	background: #fff;
+	padding: 30px 15px;
+	border: 0;
 }
 
 .filter__heading--tabs {
@@ -144,6 +150,7 @@
 	background: #fff;
 	border-radius: 255px 15px 255px 15px/15px 255px 15px 255px;
 	border: 4px solid #41403E;
+
 	&.selected {
 		border-radius: 255px 15px 255px 15px/15px 255px 15px 255px;
 		z-index: 2;
@@ -164,8 +171,17 @@
     border-radius: 255px 15px 255px 15px/15px 255px 15px 255px; 
     padding: 15px;
     flex-direction: column;
+    align-items: center;
+    margin: 0 -8px;
+    align-items: center;
+    border-color: #a9a4a4;
+    background: #fff;
+    border-color: #41403e;
+    border-bottom-color: #fff;
     select {
     	padding: 8px 15px;
+    	background: #d8d7d7;
+    	border-color: #fff;
     }
 }
 
@@ -179,16 +195,23 @@
 .toolbar--corner {
 	display: flex;
 	margin: 0 0 0 auto;
-	padding: 8px 15px;
 	align-items: center;
 }
 
 .found-count {
 	padding: 16px 15px;
 	margin: 0 15px 0 0;
+	border-color: #fff;
+
 	span {
-		padding: 4px 15px;
+		
 	}
+}
+
+.found-count--number {
+	padding: 4px 15px;
+	background: #d8d7d7;
+	border-color: #d8d7d7;
 }
 
 .dropdown__product--img {
