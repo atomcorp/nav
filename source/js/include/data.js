@@ -80,7 +80,6 @@ var data = {
                 "strapline": "Entry-Level CD player",
                 "nid": "4264",
                 "url": "\/products\/hifi-and-home-cinema\/topaz-cd5",
-                "keywords": ["With DAC"],
                 "range": "Topaz"
             }, {
                 "title": "Azur 651C",
@@ -160,21 +159,26 @@ var data = {
                 "title": "DacMagic 100",
                 "strapline": "Digital to Analogue Converter",
                 "nid": "3823",
+                "keywords": ["With DAC"],
                 "url": "\/products\/hifi-and-home-cinema\/dacmagic-100"
             }, {
                 "title": "DacMagic Plus ",
                 "strapline": "Digital to Analogue Converter \u0026 Preamplifier",
                 "nid": "3830",
+                "keywords": ["With DAC"],
                 "url": "\/products\/hifi-and-home-cinema\/dacmagic-plus"
             }, {
                 "title": "DacMagic XS",
                 "strapline": "Our best ever portable DAC",
                 "nid": "3846",
+                "keywords": ["With DAC"],
                 "url": "\/products\/hifi-and-home-cinema\/dacmagic-xs"
             }, {
                 "title": "Azur 851D",
                 "strapline": "Flagship Digital to Analogue Converter",
                 "nid": "3868",
+                "keywords": ["With DAC"],
+
                 "url": "\/products\/851\/851d",
                 "range": "851"
             }]

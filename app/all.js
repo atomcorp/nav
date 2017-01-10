@@ -168,8 +168,6 @@ var data = {
 
                 "url": "\/products\/hifi-and-home-cinema\/topaz-cd5",
 
-                "keywords": ["With DAC"],
-
                 "range": "Topaz"
 
             }, {
@@ -328,6 +326,8 @@ var data = {
 
                 "nid": "3823",
 
+                "keywords": ["With DAC"],
+
                 "url": "\/products\/hifi-and-home-cinema\/dacmagic-100"
 
             }, {
@@ -337,6 +337,8 @@ var data = {
                 "strapline": "Digital to Analogue Converter \u0026 Preamplifier",
 
                 "nid": "3830",
+
+                "keywords": ["With DAC"],
 
                 "url": "\/products\/hifi-and-home-cinema\/dacmagic-plus"
 
@@ -348,6 +350,8 @@ var data = {
 
                 "nid": "3846",
 
+                "keywords": ["With DAC"],
+
                 "url": "\/products\/hifi-and-home-cinema\/dacmagic-xs"
 
             }, {
@@ -357,6 +361,10 @@ var data = {
                 "strapline": "Flagship Digital to Analogue Converter",
 
                 "nid": "3868",
+
+                "keywords": ["With DAC"],
+
+
 
                 "url": "\/products\/851\/851d",
 
@@ -1184,7 +1192,7 @@ $(document).on('click', '.filter__heading', function(event) {
 		type = 'All';
 		$(".filter__heading:contains('All')").addClass('selected');
 	}
-	$('.features-group').addClass('hide');
+
 	// deselect uneligible categories if necessary
 	if (type !== 'All') {
 		$('.filter__category').addClass('inactive');
@@ -1224,8 +1232,6 @@ $(document).on('click', '.filter__category.filter__category--tabs', function(eve
 		}
 
 		// check it's not something that uses a feature
-		$('.filter__feature').addClass('hide');
-
 		if ($this.data('feature-link') === "Amplifiers") {
 			$('.features-group').removeClass('hide');
 			$('.filter__feature[data-feature="Amplifiers"]').removeClass('hide');
@@ -1233,8 +1239,8 @@ $(document).on('click', '.filter__category.filter__category--tabs', function(eve
 			$('.features-group').removeClass('hide');
 			$('.filter__feature[data-feature="Wireless"]').removeClass('hide');
 		} else {
-			$('.features-group').addClass('hide');
-			$('.filter__feature').addClass('hide');
+			$('.features-group').removeClass('hide');
+			$('.filter__feature').removeClass('hide');
 		}
 
 		// get what the filters are
