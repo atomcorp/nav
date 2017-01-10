@@ -98,6 +98,7 @@
 }
 
 // dropdown stuff
+// why is this here?
 
 .dropdown-container {
 	display: none;
@@ -141,7 +142,7 @@
 .dropdown__products {
 	width: 100%;
 	display: flex;
-	// flex-direction: column;
+	flex-direction: column;
 }
 
 .dropdown__product {
@@ -174,7 +175,6 @@
 }
 
 .dropdown-img {
-	height: 150px;
 	width: 100%;
 	overflow: hidden;
 	border: 0;
@@ -189,6 +189,11 @@
 	padding: 15px 15px 7.5px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.dropdown__product--title {
+	font-size: 26px;
 }
 
 .dropdown__product--strapline {
@@ -223,10 +228,7 @@
 }
 
 .dropdown__product--menu {
-	width: 33.3333%;
-	.dropdown__product--menu {
-		height: 250px;
-	}
+
 	.dropdown-img {
 		// height: 250px;
 	}
@@ -275,6 +277,13 @@
 
 
 @media (min-width: 992px) {
+
+	.dropdown-img {
+		img {
+			height: 150px;
+		}
+	}
+
 	.nav {
 		flex-wrap: no-wrap;
 		padding: 15px 0;
@@ -328,5 +337,8 @@
 	}
 	.dropdown__products {
 		flex-direction: row;
+	}
+	.dropdown__product--menu {
+		width: 33.3333%;
 	}
 }
