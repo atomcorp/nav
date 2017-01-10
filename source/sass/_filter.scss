@@ -8,7 +8,7 @@
 
 .filter__headings {
 	display: flex;
-	// justify-content: space-between;
+	flex-direction: column;
 }
 
 .filter__heading {
@@ -42,6 +42,8 @@
 	&.selected  {
 	    border-radius: 255px 145px 255px 125px/125px 255px 145px 255px;
 	    border: 4px solid #41403E;
+	    background: #41403e;
+	    color: #fff;
 	}
 }
 
@@ -136,7 +138,7 @@
 }
 
 .filter__heading--tabs {
-	margin: 0 0 0 15px;
+	margin: 0;
 	position: relative;
 	bottom: -5px;
 	background: #fff;
@@ -145,11 +147,11 @@
 	&.selected {
 		border-radius: 255px 15px 255px 15px/15px 255px 15px 255px;
 		z-index: 2;
-		border-bottom-color: #fff;
-
+		background: #41403E;
+		color: #fff;
 	}
 	&.right {
-		margin: 0 15px 0 auto;
+		// margin: 0 15px 0 auto;
 	}
 }
 
@@ -161,6 +163,7 @@
     border-bottom: 4px solid;
     border-radius: 255px 15px 255px 15px/15px 255px 15px 255px; 
     padding: 15px;
+    flex-direction: column;
     select {
     	padding: 8px 15px;
     }
@@ -169,8 +172,8 @@
 // results
 
 .result---product {
-	padding: 15px;
-	width: calc(25% - 30px);
+	width: 100%;
+	padding: 0 0 15px;
 }
 
 .toolbar--corner {
@@ -185,5 +188,42 @@
 	margin: 0 15px 0 0;
 	span {
 		padding: 4px 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.result---product {
+		padding: 15px;
+		width: calc(50% - 30px);
+	}
+	.toolbar {
+		flex-direction: row;
+	}
+	.filter__headings {
+		display: flex;
+		flex-direction: row;
+	}
+	.filter__heading--tabs {
+
+
+		&.right {
+			margin: 0 15px 0 auto;
+		}
+	}
+	.filter__heading--tabs {
+
+		&.selected {
+			border-bottom-color: #fff;
+			background: #fff;
+			color: #41403E;
+		}
+
+	}
+}
+
+@media (min-width: 992px) {
+	.result---product {
+		padding: 15px;
+		width: calc(25% - 30px);
 	}
 }

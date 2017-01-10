@@ -1,3 +1,37 @@
 .hero {
 	height: 500px;
 }
+
+
+.pretend-box {
+    padding: 15px;
+    border: 2px solid;
+    margin: 15px 0;
+    display: inline-block;
+    p {
+        padding: 200px 0 0 0;
+    }
+}
+
+.dummy-text {
+    padding: 15px;
+}
+
+@media (min-width: 500px) {
+	.dummy-text {
+	    column-count: 2;
+	}
+}
+
+@media (min-width: 768px) {
+	.dummy-text {
+	    column-count: 3;
+	    padding: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.dummy-text {
+	    column-count: 4;
+	}
+}

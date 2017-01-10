@@ -90,6 +90,7 @@
 	align-items: center;
 	flex-direction: column;
 	padding: 0 0 0 15px;
+	cursor: pointer;
 	img {
 	    height: 28px;
 	    width: 28px;
@@ -117,6 +118,9 @@
 
 .dropdown__sidebar {
 	padding: 0 15px 0 15px;
+	order: 2;
+	display: flex;
+	justify-content: space-around;
 }
 
 .dropdown__content {
@@ -126,6 +130,7 @@
 
 .dropdown__category {
 	display: flex;
+	flex-direction: column;
 	padding: 15px 0;
 }
 
@@ -136,7 +141,7 @@
 .dropdown__products {
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	// flex-direction: column;
 }
 
 .dropdown__product {
@@ -302,6 +307,9 @@
 	.dropdown__sidebar {
 		padding: 0 15px 0 0;
 		width: 25%;
+		order: initial;
+		flex-direction: column;
+
 	}
 	.dropdown__content {
 		padding: 0 0 0 15px;
@@ -314,5 +322,11 @@
 	.dropdown__product--view-all {
 	    width: 100%;
 	    margin-top: 30px;
+	}
+	.dropdown__category {
+		flex-direction: row;
+	}
+	.dropdown__products {
+		flex-direction: row;
 	}
 }
