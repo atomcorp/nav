@@ -219,5 +219,3 @@ function hashSelectFilter() {
 		hash === 'home' ? $('.products-title').text('Home cinema') : false;
 	}
 }
-
-function do

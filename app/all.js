@@ -1353,7 +1353,5 @@ function hashSelectFilter() {
 	}
 }
 
-function do
-
 
 }); // END JQUERY
