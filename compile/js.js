@@ -1262,11 +1262,11 @@ function getEligibleProducts(filters) {
 		for (var i = 0; i < results.length; i++) {
 
 			for (var x = 0; x < results[i]['child-category'].length; x++) {
-
+				console.log(results[i]['child-category'][x].products)
 				for (var y = 0; y < results[i]['child-category'][x].products.length; y++) {
-					var name = results[i]['child-category'][x].products[y].title;
-					var price = results[i]['child-category'][x].products[y].nid;
-					var strapline = results[i]['child-category'][x].products[y].strapline;
+					var name = cachedData[i]['child-category'][x].products[y].title;
+					var price = cachedData[i]['child-category'][x].products[y].nid;
+					var strapline = cachedData[i]['child-category'][x].products[y].strapline;
 					products.push(productMarkup(name, price, strapline));
 				}
 			}
@@ -1279,7 +1279,7 @@ function getEligibleProducts(filters) {
 
 
 				if (cachedData[i]['child-category'][x].title === filters.categories) {
-					
+					console.log(cachedData[i]['child-category'][x].products)
 					for (var y = 0; y < cachedData[i]['child-category'][x].products.length; y++) {
 						var name = cachedData[i]['child-category'][x].products[y].title;
 						var price = cachedData[i]['child-category'][x].products[y].nid;
@@ -1291,6 +1291,7 @@ function getEligibleProducts(filters) {
 			}
 		}
 	}
+	console.log(products);
 	var $list = $('.results-list');
 	if (products.length) {
 		$list.html('');
@@ -1345,6 +1346,5 @@ function hashSelectFilter() {
 	}
 }
 
-function do
 
 }); // END JQUERY
