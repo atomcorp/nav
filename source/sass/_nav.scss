@@ -279,9 +279,7 @@
 @media (min-width: 992px) {
 
 	.dropdown-img {
-		img {
-			height: 150px;
-		}
+		height: 150px;
 	}
 
 	.nav {
@@ -339,6 +337,6 @@
 		flex-direction: row;
 	}
 	.dropdown__product--menu {
-		width: 33.3333%;
+		width: calc(33% - 15px);
 	}
 }

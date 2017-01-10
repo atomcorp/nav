@@ -191,6 +191,12 @@
 	}
 }
 
+.dropdown__product--img {
+	.dropdown-img {
+		height: 150px;
+	}
+}
+
 @media (min-width: 768px) {
 	.result---product {
 		padding: 15px;
