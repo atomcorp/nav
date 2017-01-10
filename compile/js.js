@@ -168,6 +168,8 @@ var data = {
 
                 "url": "\/products\/hifi-and-home-cinema\/topaz-cd5",
 
+                "keywords": ["With DAC"],
+
                 "range": "Topaz"
 
             }, {
@@ -326,8 +328,6 @@ var data = {
 
                 "nid": "3823",
 
-                "keywords": ["With DAC"],
-
                 "url": "\/products\/hifi-and-home-cinema\/dacmagic-100"
 
             }, {
@@ -337,8 +337,6 @@ var data = {
                 "strapline": "Digital to Analogue Converter \u0026 Preamplifier",
 
                 "nid": "3830",
-
-                "keywords": ["With DAC"],
 
                 "url": "\/products\/hifi-and-home-cinema\/dacmagic-plus"
 
@@ -350,8 +348,6 @@ var data = {
 
                 "nid": "3846",
 
-                "keywords": ["With DAC"],
-
                 "url": "\/products\/hifi-and-home-cinema\/dacmagic-xs"
 
             }, {
@@ -361,10 +357,6 @@ var data = {
                 "strapline": "Flagship Digital to Analogue Converter",
 
                 "nid": "3868",
-
-                "keywords": ["With DAC"],
-
-
 
                 "url": "\/products\/851\/851d",
 
@@ -1270,11 +1262,11 @@ function getEligibleProducts(filters) {
 		for (var i = 0; i < results.length; i++) {
 
 			for (var x = 0; x < results[i]['child-category'].length; x++) {
-
+				console.log(results[i]['child-category'][x].products)
 				for (var y = 0; y < results[i]['child-category'][x].products.length; y++) {
-					var name = results[i]['child-category'][x].products[y].title;
-					var price = results[i]['child-category'][x].products[y].nid;
-					var strapline = results[i]['child-category'][x].products[y].strapline;
+					var name = cachedData[i]['child-category'][x].products[y].title;
+					var price = cachedData[i]['child-category'][x].products[y].nid;
+					var strapline = cachedData[i]['child-category'][x].products[y].strapline;
 					products.push(productMarkup(name, price, strapline));
 				}
 			}
@@ -1287,7 +1279,7 @@ function getEligibleProducts(filters) {
 
 
 				if (cachedData[i]['child-category'][x].title === filters.categories) {
-					
+					console.log(cachedData[i]['child-category'][x].products)
 					for (var y = 0; y < cachedData[i]['child-category'][x].products.length; y++) {
 						var name = cachedData[i]['child-category'][x].products[y].title;
 						var price = cachedData[i]['child-category'][x].products[y].nid;
@@ -1299,6 +1291,7 @@ function getEligibleProducts(filters) {
 			}
 		}
 	}
+	console.log(products);
 	var $list = $('.results-list');
 	if (products.length) {
 		$list.html('');
@@ -1319,14 +1312,14 @@ var productMarkup = function(name, price, strapline) {
 	var back3 = 'img--cross';
 	var back = back1;
 	// var num = Math.random();
+	var num = Math.random().toFixed(2) * 100;
 	var random = Math.random();
-	var num = parseInt(random * 100);
 	if (random > 0.3 && random < 0.7) {
 		back = back2;
-		num = parseInt(num * 100);
+		num = num.toFixed(2) * 100;
 	} else if (random > 0.7) {
 		back = back3;
-		num = parseInt(num / 10);
+		num = num.toFixed(1) * 10;
 	}
  	return '<div class="result---product"><div class="box"><div class="dropdown__product--img"><div class="dropdown-img box ' + back + '"></div></div><div class="dropdown__product--heading"><div class="dropdown__product--title">' + name + '</div><div class="dropdown__product--price">£' + num + '</div></div><div class="dropdown__product--strapline">' + strapline + '</div></div></div>';
 }
@@ -1352,8 +1345,6 @@ function hashSelectFilter() {
 		hash === 'home' ? $('.products-title').text('Home cinema') : false;
 	}
 }
-
-function do
 
 
 }); // END JQUERY

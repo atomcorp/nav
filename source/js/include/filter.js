@@ -154,7 +154,7 @@ function getEligibleProducts(filters) {
 
 
 				if (cachedData[i]['child-category'][x].title === filters.categories) {
-
+					
 					for (var y = 0; y < cachedData[i]['child-category'][x].products.length; y++) {
 						var name = cachedData[i]['child-category'][x].products[y].title;
 						var price = cachedData[i]['child-category'][x].products[y].nid;
@@ -219,3 +219,5 @@ function hashSelectFilter() {
 		hash === 'home' ? $('.products-title').text('Home cinema') : false;
 	}
 }
+
+function do
