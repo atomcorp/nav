@@ -205,6 +205,9 @@
 .result---product {
 	width: 100%;
 	padding: 0 0 15px;
+	.box {
+		overflow: hidden;
+	}
 }
 
 .toolbar--corner {

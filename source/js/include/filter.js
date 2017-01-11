@@ -213,7 +213,8 @@ function featuresFilter(filter) {
 							var name = results[i]['child-category'][x].products[y].title;
 							var price = results[i]['child-category'][x].products[y].nid;
 							var strapline = results[i]['child-category'][x].products[y].strapline;
-							products.push(productMarkup(name, price, strapline));
+							var colours = results[i]['child-category'][x].products[y].colours;
+							products.push(productMarkup(name, price, strapline, colours));
 						}
 					}
 				}
