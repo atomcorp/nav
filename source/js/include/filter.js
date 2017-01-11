@@ -1,3 +1,5 @@
+var filteredProductData = [];
+
 function popFilterCategories() {
 	var $domFilter = $('.filter__categories');
 
@@ -90,6 +92,7 @@ $(document).on('click', '.filter__heading', function(event) {
 $(document).on('click', '.filter__category.filter__category--tabs', function(event) {
 	event.preventDefault();
 	var $this = $(this);
+	$('.filter__feature').removeClass('selected');
 	if (!$this.hasClass('inactive')) {
 		if (!$this.hasClass('selected')) {
 			$this.addClass('selected');
@@ -123,6 +126,7 @@ function getEligibleProducts(filters) {
 	var cachedData = data.navigation;
 	var results = [];
 	var products = [];
+	$('.filter__feature').removeClass('selected');
 	// select home cinema
 	if (filters.systems && !filters.categories) {
 		if (filters.systems !== "All")  {
@@ -134,6 +138,7 @@ function getEligibleProducts(filters) {
 		} else {
 			results = cachedData;
 		}
+
 		for (var i = 0; i < results.length; i++) {
 
 			for (var x = 0; x < results[i]['child-category'].length; x++) {
@@ -166,6 +171,7 @@ function getEligibleProducts(filters) {
 			}
 		}
 	}
+	
 	var $list = $('.results-list');
 	if (products.length) {
 		$list.html('');
@@ -180,6 +186,60 @@ function getEligibleProducts(filters) {
 	}
 }
 
+function featuresFilter(filter) {
+	// check if any products have the filter
+	var results = data.navigation;
+	var products = [];
+	for (var i = 0; i < results.length; i++) {
+
+		for (var x = 0; x < results[i]['child-category'].length; x++) {
+
+			for (var y = 0; y < results[i]['child-category'][x].products.length; y++) {
+				// var name = results[i]['child-category'][x].products[y].title;
+				// var price = results[i]['child-category'][x].products[y].nid;
+				// var strapline = results[i]['child-category'][x].products[y].strapline;
+				if (results[i]['child-category'][x].products[y].keywords) {
+					for (var z = 0; z < results[i]['child-category'][x].products[y].keywords.length; z++) {
+						if (results[i]['child-category'][x].products[y].keywords[z] === filter) {
+							// yeah, finally
+							var name = results[i]['child-category'][x].products[y].title;
+							var price = results[i]['child-category'][x].products[y].nid;
+							var strapline = results[i]['child-category'][x].products[y].strapline;
+							products.push(productMarkup(name, price, strapline));
+						}
+					}
+				}
+			}
+		}
+	}
+	var $list = $('.results-list');
+	if (products.length) {
+		$list.html('');
+		for (var i = 0; i < products.length; i++) {
+			$list.append(products[i])
+		}
+		$('.found-count--number').text($('.results-list .result---product').length);
+
+	} else {
+		$list.html('<div>' +  'No results' + '</div>');
+		$('.found-count--number').text('0');
+	}
+}
+
+$(document).on('click', '.filter__feature', function(event) {
+	event.preventDefault();
+	var $this = $(this);
+	var text = $this.text();
+	if (!$this.hasClass('selected')) {
+		$('.filter__feature').removeClass('selected');
+		$this.addClass('selected')
+		featuresFilter(text);
+	} else {
+		$('.filter__feature').removeClass('selected');
+	}
+	
+});
+
 var productMarkup = function(name, price, strapline) {
 	var back1 = 'img--dots';
 	var back2 = 'img--blueprint';
@@ -187,10 +247,10 @@ var productMarkup = function(name, price, strapline) {
 	var back = back1;
 	// var num = Math.random();
 	var random = Math.random();
-	var num = parseInt(random * 100);
+	var num = parseInt(random * 1000);
 	if (random > 0.3 && random < 0.7) {
 		back = back2;
-		num = parseInt(num * 100);
+		num = parseInt(num + 1000);
 	} else if (random > 0.7) {
 		back = back3;
 		num = parseInt(num / 10);

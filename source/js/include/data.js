@@ -400,21 +400,53 @@ var data = {
                 "strapline": "Portable Bluetooth Speaker",
                 "nid": "9991",
                 "url": "\/products\/speakers\/tv2",
-                "keywords": ["Portable"],
-                "range": "Yoyo"
+                "keywords": ["Portable", "Bluetooth"],
+                "range": "Yoyo",
+                "keywords": ["Portable", "Bluetooth", "Stereo"]
             }, {
                 "title": "Yoyo (M)",
                 "strapline": "Portable Stereo Bluetooth Speaker",
                 "nid": "9992",
                 "url": "\/products\/speakers\/tv5",
-                "keywords": ["Portable"],
+                "keywords": ["Portable", "Bluetooth", "Multiroom"],
                 "range": "Yoyo"
             }, {
                 "title": "Yoyo (L)",
                 "strapline": "All-In-One Home Audio System",
                 "nid": "9993",
                 "url": "\/products\/speakers\/tv2-v2",
+                "keywords": ["TV Compatible"],
                 "range": "Yoyo"
+            }, {
+                "title": "Air 100",
+                "strapline": "Powerful, Flexible, Wireless Sound",
+                "nid": "9993",
+                "url": "\/products\/speakers\/tv2-v2",
+                "keywords": ["Portable"]
+            }, {
+                "title": "G2",
+                "strapline": "Mini Portable Bluetooth Speaker",
+                "nid": "9993",
+                "url": "\/products\/speakers\/tv2-v2",
+                "keywords": ["Portable", "Bluetooth"]
+            }, {
+                "title": "G5",
+                "strapline": "Portable Bluetooth speaker",
+                "nid": "9993",
+                "url": "\/products\/speakers\/tv2-v2",
+                "keywords": ["Portable", "Bluetooth", "Airplay"]
+            }, {
+                "title": "GO",
+                "strapline": "Portable Bluetooth speaker",
+                "nid": "9993",
+                "url": "\/products\/speakers\/tv2-v2",
+                "keywords": ["Portable", "Bluetooth"]
+            }, {
+                "title": "GO Radio",
+                "strapline": "Wireless Bluetooth Speaker & Radio",
+                "nid": "9993",
+                "url": "\/products\/speakers\/tv2-v2",
+                "keywords": ["Portable", "Bluetooth"]
             }]
         }]
     }, {
