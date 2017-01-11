@@ -58,3 +58,17 @@ function dropdownProducts(categoryName) {
 		}
 	}
 }
+
+$(window).on('scroll', function() {
+	// bototm of filter distance from top
+	if ($('#drake-options').val() === 'fixed') {
+	    var bottomOfFilter = $('.toolbar').position().top;
+		if ($(window).scrollTop() > bottomOfFilter) {
+			$('.fixed-filter').addClass('fixed').removeClass('hide');
+		}
+		else {
+			$('.fixed-filter').removeClass('fixed').addClass('hide');
+		}
+	}
+
+});

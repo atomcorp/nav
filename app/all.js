@@ -118,7 +118,9 @@ var data = {
 
                 "keywords": ["Power Amp"],
 
-                "range": "CX"
+                "range": "CX",
+
+                "colours": ["black", "white"]
 
             }, {
 
@@ -130,7 +132,9 @@ var data = {
 
                 "url": "\/products\/cx\/cxc",
 
-                "range": "CX"
+                "range": "CX",
+
+                "colours": ["black", "white"]
 
             }, {
 
@@ -144,7 +148,9 @@ var data = {
 
                 "keywords": ["With DAC"],
 
-                "range": "851"
+                "range": "851",
+
+                "colours": ["black", "white"]
 
             }, {
 
@@ -156,7 +162,9 @@ var data = {
 
                 "url": "\/products\/hifi-and-home-cinema\/topaz-cd10",
 
-                "range": "Topaz"
+                "range": "Topaz",
+
+                "colours": ["black", "white"]
 
             }, {
 
@@ -812,7 +820,9 @@ var data = {
 
                 "range": "Yoyo",
 
-                "keywords": ["Portable", "Bluetooth", "Stereo"]
+                "keywords": ["Portable", "Bluetooth", "Stereo"],
+
+                "colours": ["blue", "red", "white"]
 
             }, {
 
@@ -826,7 +836,9 @@ var data = {
 
                 "keywords": ["Portable", "Bluetooth", "Multiroom"],
 
-                "range": "Yoyo"
+                "range": "Yoyo",
+
+                "colours": ["blue", "red", "white"]
 
             }, {
 
@@ -876,7 +888,9 @@ var data = {
 
                 "url": "\/products\/speakers\/tv2-v2",
 
-                "keywords": ["Portable", "Bluetooth", "Airplay"]
+                "keywords": ["Portable", "Bluetooth", "Airplay"],
+
+                "colours": ["blue", "gold", "white"]
 
             }, {
 
@@ -888,7 +902,9 @@ var data = {
 
                 "url": "\/products\/speakers\/tv2-v2",
 
-                "keywords": ["Portable", "Bluetooth"]
+                "keywords": ["Portable", "Bluetooth"],
+
+                "colours": ["blue", "red", "white"]
 
             }, {
 
@@ -1195,6 +1211,19 @@ function dropdownProducts(categoryName) {
 	}
 }
 
+$(window).on('scroll', function() {
+	// bototm of filter distance from top
+	if ($('#drake-options').val() === 'fixed') {
+	    var bottomOfFilter = $('.toolbar').position().top;
+		if ($(window).scrollTop() > bottomOfFilter) {
+			$('.fixed-filter').addClass('fixed').removeClass('hide');
+		}
+		else {
+			$('.fixed-filter').removeClass('fixed').addClass('hide');
+		}
+	}
+
+});
 var filteredProductData = [];
 
 function popFilterCategories() {
@@ -1246,7 +1275,7 @@ function setFilterCriteria() {
 }
 
 // hifi, home cinema, speakers
-$(document).on('click', '.filter__heading', function(event) {
+$(document).on('click', '.filter__group--og .filter__heading', function(event) {
 	event.preventDefault();
 	var $this = $(this);
 	var type = $this.text(); 
@@ -1286,7 +1315,7 @@ $(document).on('click', '.filter__heading', function(event) {
 });
 
 // categories
-$(document).on('click', '.filter__category.filter__category--tabs', function(event) {
+$(document).on('click', '.filter__group--og .filter__category.filter__category--tabs', function(event) {
 	event.preventDefault();
 	var $this = $(this);
 	$('.filter__feature').removeClass('selected');
@@ -1344,7 +1373,8 @@ function getEligibleProducts(filters) {
 					var name = results[i]['child-category'][x].products[y].title;
 					var price = results[i]['child-category'][x].products[y].nid;
 					var strapline = results[i]['child-category'][x].products[y].strapline;
-					products.push(productMarkup(name, price, strapline));
+					var colours = results[i]['child-category'][x].products[y].colours;
+					products.push(productMarkup(name, price, strapline, colours));
 				}
 			}
 		}
@@ -1361,7 +1391,8 @@ function getEligibleProducts(filters) {
 						var name = cachedData[i]['child-category'][x].products[y].title;
 						var price = cachedData[i]['child-category'][x].products[y].nid;
 						var strapline = cachedData[i]['child-category'][x].products[y].strapline;
-						products.push(productMarkup(name, price, strapline));
+						var colours = cachedData[i]['child-category'][x].products[y].colours;
+						products.push(productMarkup(name, price, strapline, colours));
 						
 					}
 				}
@@ -1380,6 +1411,12 @@ function getEligibleProducts(filters) {
 	} else {
 		$list.html('<div>' +  'No results' + '</div>');
 		$('.found-count--number').text('0');
+	}
+}
+
+function addColours(colourArray) {
+	for (var i = 0; i < colourArray.length; i++) {
+		colourArray[i]
 	}
 }
 
@@ -1437,21 +1474,30 @@ $(document).on('click', '.filter__feature', function(event) {
 	
 });
 
-var productMarkup = function(name, price, strapline) {
+var productMarkup = function(name, price, strapline, colours) {
 	var back1 = 'img--dots';
 	var back2 = 'img--blueprint';
 	var back3 = 'img--cross';
 	var back = back1;
+	var colour = '';
+	var colourString = '';
 	// var num = Math.random();
 	var random = Math.random();
 	var num = parseInt(random * 1000);
 	if (random > 0.3 && random < 0.7) {
 		back = back2;
+		num = parseInt(num + 1000);
 	} else if (random > 0.7) {
 		back = back3;
 		num = parseInt(num / 10);
 	}
- 	return '<div class="result---product"><div class="box"><div class="dropdown__product--img"><div class="dropdown-img box ' + back + '"></div></div><div class="dropdown__product--heading"><div class="dropdown__product--title">' + name + '</div><div class="dropdown__product--price">£' + num + '</div></div><div class="dropdown__product--strapline">' + strapline + '</div></div></div>';
+	if (colours) {
+		for (var i = 0; i < colours.length; i++) {
+			colour += '<div class="product__colour product__colour--' + colours[i] + '"></div>';
+		}
+		colourString = '<div class="product__colours">' + colour + '</div>';
+	}
+ 	return '<div class="result---product"><div class="box"><div class="dropdown__product--img"><div class="dropdown-img box ' + back + '"></div>' + colourString + '</div><div class="dropdown__product--heading"><div class="dropdown__product--title">' + name + '</div><div class="dropdown__product--price">£' + num + '</div></div><div class="dropdown__product--strapline">' + strapline + '</div></div></div>';
 }
 
 if ($('.filter').length) {

@@ -144,33 +144,39 @@
 </div>
 
 	
-	<div class="hero box img--blueprint">
 	
-</div>
 
 	<!-- You write code for this content block in another file -->
 	
 	
 <!-- With tabs -->
 
-<!-- <div class="hero box img--blueprint">
+<div class="hero box img--blueprint green">
 	<div class="container">
 		<div class="hero-container">
 			<h1 class="products-title">PRODUCTS</h1>
+			<div class="products-introduction">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab distinctio odit laborum aliquam, eveniet repellat eaque, deserunt dicta minima corporis adipisci reiciendis error voluptatem laboriosam tempora magnam repellendus perspiciatis pariatur.</p>
+			</div>
 		</div>
 	</div>
-</div> -->
+</div>
 
-<div class="container">
+<!-- <div class="container">
 	<h1 class="products-title">PRODUCTS</h1>
 	<div class="products-introduction">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab distinctio odit laborum aliquam, eveniet repellat eaque, deserunt dicta minima corporis adipisci reiciendis error voluptatem laboriosam tempora magnam repellendus perspiciatis pariatur.</p>
 	</div>
-</div>
+</div> -->
+
+<br>
+<br>
+<br>
+<br>
 
 <div class="container">
 	<div class="filter">
-		<div class="filter__group filter__group--tabs">
+		<div class="filter__group filter__group--og filter__group--tabs">
 			<div class="filter__title">
 <!-- 				<h2>Filter</h2>
  -->			</div>
@@ -215,9 +221,8 @@
 				</div>
 				<div class="toolbar box">
 					<div class="filter__group features-group">
-						
 						<div class="filter__features">
-							<div class="filter__feature--label">Refine</div>
+							<!-- <div class="filter__feature--label">Features</div> -->
 							<div class="filter__feature" data-feature="Amplifiers">Integrated</div>
 							<div class="filter__feature" data-feature="Amplifiers">Power Amp</div>
 							<div class="filter__feature" data-feature="Amplifiers">AV Receiver</div>
@@ -233,7 +238,7 @@
 					</div>
 					<div class="toolbar--corner">
 						<div class="found-count">
-							<div>Products found:&nbsp;</div><div class="found-count--number round"></div>
+							Products found:&nbsp;<span class="found-count--number round"></span>
 						</div>
 						<select class="round" name="" id="">
 							<option value="1">Expensive</option>
@@ -265,6 +270,58 @@
 <br><br>
 <br><br>
 
+<!-- This breaks stuff, it's 'nnoying -->
+<!-- <div class="fixed-filter hide">
+	<div class="container">
+		<div class="fixed-filter--container">
+			<div class="filter__headings">
+				<div class="filter__heading filter__heading--tabs" data-nav-hash="hifi">Hi-Fi</div>
+				<div class="filter__heading filter__heading--tabs" data-nav-hash="speakers">Speakers</div>
+				<div class="filter__heading filter__heading--tabs" data-nav-hash="home">Home Cinema</div>
+				<div class="filter__heading filter__heading--tabs selected" data-nav-hash="all">All</div>
+				<div class="filter__heading filter__heading--tabs right" data-nav-hash="ranges">Ranges</div>
+			</div>
+			<div class="box__3 filter__content">
+				<div class="filter__categories filter__categories--tabs box">
+					<div class="filter__category filter__category--tabs" data-system="Hi-Fi">Network Players</div>
+					<div class="filter__category filter__category--tabs" data-system="Hi-Fi">Disc Players</div>
+					<div class="filter__category filter__category--tabs" data-system="Hi-Fi" data-feature-link="Amplifiers">Amplifiers</div>
+					<div class="filter__category filter__category--tabs" data-system="Hi-Fi">DACs</div>
+					<div class="filter__category filter__category--tabs" data-system="Hi-Fi">Phono Stages</div>
+					<div class="filter__category filter__category--tabs" data-system="Hi-Fi">All-in-one Systems</div>
+					<div class="filter__category filter__category--tabs" data-system="Hi-Fi">SE1</div>
+					<div class="filter__category filter__category--tabs" data-system="Speakers">Floor Standing</div>
+					<div class="filter__category filter__category--tabs" data-system="Speakers">Standmount</div>
+					<div class="filter__category filter__category--tabs" data-system="Speakers">Bookshelf</div>
+					<div class="filter__category filter__category--tabs" data-system="Speakers">Surround</div>
+					<div class="filter__category filter__category--tabs" data-system="Speakers">Subwoofers</div>
+					<div class="filter__category filter__category--tabs" data-system="Speakers">In-Ceiling</div>
+					<div class="filter__category filter__category--tabs" data-system="Speakers" data-feature-link="Wireless">Wireless</div>
+					<div class="filter__category filter__category--tabs" data-system="Home Cinema">AV Receivers</div>
+					<div class="filter__category filter__category--tabs" data-system="Home Cinema">Bluray Player</div>
+					<div class="filter__category filter__category--tabs" data-system="Home Cinema">Surround Speakers</div>
+					<div class="filter__category filter__category--tabs" data-system="Home Cinema">Subwoofers</div>
+					<div class="filter__category filter__category--tabs" data-system="Home Cinema">TV Speakers</div>
+					<div class="filter__category filter__category--tabs filter__range inactive" data-system="Ranges">Edge</div>
+					<div class="filter__category filter__category--tabs filter__range inactive" data-system="Ranges">851</div>
+					<div class="filter__category filter__category--tabs filter__range inactive" data-system="Ranges">CX</div>
+					<div class="filter__category filter__category--tabs filter__range inactive" data-system="Ranges">Azur</div>
+					<div class="filter__category filter__category--tabs filter__range inactive" data-system="Ranges">Topaz</div>
+					<div class="filter__category filter__category--tabs filter__range inactive" data-system="Ranges">Aero</div>
+					<div class="filter__category filter__category--tabs filter__range inactive" data-system="Ranges">Aeromax</div>
+					<div class="filter__category filter__category--tabs filter__range inactive" data-system="Ranges">Minx</div>
+					<div class="filter__category filter__category--tabs filter__range inactive" data-system="Ranges">Yoyo</div>
+					<div class="filter__category filter__category--tabs filter__range inactive" data-system="Ranges">Evo</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<select name="" id="drake-options">
+	<option value="nothing">-- nothing --</option>
+	<option value="fixed">fixed</option>
+</select>
 
 
 	 

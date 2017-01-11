@@ -55,26 +55,30 @@ var data = {
                 "nid": "3987",
                 "url": "\/products\/cx\/cxu",
                 "keywords": ["Power Amp"],
-                "range": "CX"
+                "range": "CX",
+                "colours": ["black", "white"]
             }, {
                 "title": "CXC",
                 "strapline": "A dedicated CD transport",
                 "nid": "4003",
                 "url": "\/products\/cx\/cxc",
-                "range": "CX"
+                "range": "CX",
+                "colours": ["black", "white"]
             }, {
                 "title": "Azur 851C",
                 "strapline": "Flagship Upsampling DAC, CD Player \u0026 Preamplifier",
                 "nid": "4085",
                 "url": "\/products\/851\/851c",
                 "keywords": ["With DAC"],
-                "range": "851"
+                "range": "851",
+                "colours": ["black", "white"]
             }, {
                 "title": "Topaz CD10",
                 "strapline": "CD Player",
                 "nid": "4261",
                 "url": "\/products\/hifi-and-home-cinema\/topaz-cd10",
-                "range": "Topaz"
+                "range": "Topaz",
+                "colours": ["black", "white"]
             }, {
                 "title": "Topaz CD5",
                 "strapline": "Entry-Level CD player",
@@ -402,14 +406,16 @@ var data = {
                 "url": "\/products\/speakers\/tv2",
                 "keywords": ["Portable", "Bluetooth"],
                 "range": "Yoyo",
-                "keywords": ["Portable", "Bluetooth", "Stereo"]
+                "keywords": ["Portable", "Bluetooth", "Stereo"],
+                "colours": ["blue", "red", "white"]
             }, {
                 "title": "Yoyo (M)",
                 "strapline": "Portable Stereo Bluetooth Speaker",
                 "nid": "9992",
                 "url": "\/products\/speakers\/tv5",
                 "keywords": ["Portable", "Bluetooth", "Multiroom"],
-                "range": "Yoyo"
+                "range": "Yoyo",
+                "colours": ["blue", "red", "white"]
             }, {
                 "title": "Yoyo (L)",
                 "strapline": "All-In-One Home Audio System",
@@ -434,13 +440,15 @@ var data = {
                 "strapline": "Portable Bluetooth speaker",
                 "nid": "9993",
                 "url": "\/products\/speakers\/tv2-v2",
-                "keywords": ["Portable", "Bluetooth", "Airplay"]
+                "keywords": ["Portable", "Bluetooth", "Airplay"],
+                "colours": ["blue", "gold", "white"]
             }, {
                 "title": "GO",
                 "strapline": "Portable Bluetooth speaker",
                 "nid": "9993",
                 "url": "\/products\/speakers\/tv2-v2",
-                "keywords": ["Portable", "Bluetooth"]
+                "keywords": ["Portable", "Bluetooth"],
+                "colours": ["blue", "red", "white"]
             }, {
                 "title": "GO Radio",
                 "strapline": "Wireless Bluetooth Speaker & Radio",

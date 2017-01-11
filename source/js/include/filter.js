@@ -49,7 +49,7 @@ function setFilterCriteria() {
 }
 
 // hifi, home cinema, speakers
-$(document).on('click', '.filter__heading', function(event) {
+$(document).on('click', '.filter__group--og .filter__heading', function(event) {
 	event.preventDefault();
 	var $this = $(this);
 	var type = $this.text(); 
@@ -89,7 +89,7 @@ $(document).on('click', '.filter__heading', function(event) {
 });
 
 // categories
-$(document).on('click', '.filter__category.filter__category--tabs', function(event) {
+$(document).on('click', '.filter__group--og .filter__category.filter__category--tabs', function(event) {
 	event.preventDefault();
 	var $this = $(this);
 	$('.filter__feature').removeClass('selected');
@@ -147,7 +147,8 @@ function getEligibleProducts(filters) {
 					var name = results[i]['child-category'][x].products[y].title;
 					var price = results[i]['child-category'][x].products[y].nid;
 					var strapline = results[i]['child-category'][x].products[y].strapline;
-					products.push(productMarkup(name, price, strapline));
+					var colours = results[i]['child-category'][x].products[y].colours;
+					products.push(productMarkup(name, price, strapline, colours));
 				}
 			}
 		}
@@ -164,7 +165,8 @@ function getEligibleProducts(filters) {
 						var name = cachedData[i]['child-category'][x].products[y].title;
 						var price = cachedData[i]['child-category'][x].products[y].nid;
 						var strapline = cachedData[i]['child-category'][x].products[y].strapline;
-						products.push(productMarkup(name, price, strapline));
+						var colours = cachedData[i]['child-category'][x].products[y].colours;
+						products.push(productMarkup(name, price, strapline, colours));
 						
 					}
 				}
@@ -183,6 +185,12 @@ function getEligibleProducts(filters) {
 	} else {
 		$list.html('<div>' +  'No results' + '</div>');
 		$('.found-count--number').text('0');
+	}
+}
+
+function addColours(colourArray) {
+	for (var i = 0; i < colourArray.length; i++) {
+		colourArray[i]
 	}
 }
 
@@ -240,11 +248,13 @@ $(document).on('click', '.filter__feature', function(event) {
 	
 });
 
-var productMarkup = function(name, price, strapline) {
+var productMarkup = function(name, price, strapline, colours) {
 	var back1 = 'img--dots';
 	var back2 = 'img--blueprint';
 	var back3 = 'img--cross';
 	var back = back1;
+	var colour = '';
+	var colourString = '';
 	// var num = Math.random();
 	var random = Math.random();
 	var num = parseInt(random * 1000);
@@ -255,7 +265,13 @@ var productMarkup = function(name, price, strapline) {
 		back = back3;
 		num = parseInt(num / 10);
 	}
- 	return '<div class="result---product"><div class="box"><div class="dropdown__product--img"><div class="dropdown-img box ' + back + '"></div></div><div class="dropdown__product--heading"><div class="dropdown__product--title">' + name + '</div><div class="dropdown__product--price">£' + num + '</div></div><div class="dropdown__product--strapline">' + strapline + '</div></div></div>';
+	if (colours) {
+		for (var i = 0; i < colours.length; i++) {
+			colour += '<div class="product__colour product__colour--' + colours[i] + '"></div>';
+		}
+		colourString = '<div class="product__colours">' + colour + '</div>';
+	}
+ 	return '<div class="result---product"><div class="box"><div class="dropdown__product--img"><div class="dropdown-img box ' + back + '"></div>' + colourString + '</div><div class="dropdown__product--heading"><div class="dropdown__product--title">' + name + '</div><div class="dropdown__product--price">£' + num + '</div></div><div class="dropdown__product--strapline">' + strapline + '</div></div></div>';
 }
 
 if ($('.filter').length) {
