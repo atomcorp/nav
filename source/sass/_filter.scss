@@ -230,11 +230,15 @@
 	border-color: #d8d7d7;
 }
 
-.dropdown__product--img {
-	.dropdown-img {
-		// height: 150px;
+.result---product {
+	.dropdown__product--img {
+		.dropdown-img {
+			height: 150px;
+		}
 	}
 }
+
+
 
 .fixed-filter {
 	width: 100%;
@@ -273,8 +277,8 @@
 
 .product__colour {
     border: 4px solid;
-    height: 15px;
-    width: 15px;
+    height: 26px;
+    width: 26px;
     display: inline-block;
     border-radius: 255px 220px 255px 220px/209px 232px 208px 255px;
     margin: 0 15px;
@@ -338,6 +342,6 @@
 @media (min-width: 992px) {
 	.result---product {
 		padding: 15px;
-		width: calc(25% - 30px);
+		width: 25%;
 	}
 }
