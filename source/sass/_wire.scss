@@ -89,3 +89,10 @@ body {
 .direction-arrow.active {
     transform: rotate(90deg);
 }
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}

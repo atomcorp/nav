@@ -232,7 +232,7 @@
 
 .dropdown__product--img {
 	.dropdown-img {
-		height: 150px;
+		// height: 150px;
 	}
 }
 
@@ -327,6 +327,11 @@
 			color: #41403E;
 		}
 
+	}
+	.dropdown__product--img {
+		.dropdown-img {
+			height: 150px;
+		}
 	}
 }
 
