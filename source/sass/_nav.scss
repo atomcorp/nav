@@ -54,6 +54,7 @@
 	align-items: center;
 	order: 2;
 	flex-grow: 1;
+	flex-wrap: wrap;
 }
 
 // Search 
@@ -94,6 +95,16 @@
 	img {
 	    height: 28px;
 	    width: 28px;
+	}
+}
+
+.languages {
+	width: 100%;
+	justify-content: flex-end;
+	padding: 0 0 15px;
+	font-size: 12px;
+	&.selected {
+	    border-bottom: 2px solid;
 	}
 }
 
