@@ -1548,7 +1548,8 @@ var MobileFilter = function() {
 			var activeCategoryObj = {};
 			activeCategoryObj.name =  $clicked.text();
 			activeCategoryObj.dom = $clicked;
-			activeCategoryObj.parentName =  $clicked.parent().siblings('.next').text();
+			// http://stackoverflow.com/a/22117753/2368141
+			activeCategoryObj.parentName = $clicked.parent().siblings('.next').contents().get(0).nodeValue;
 			activeCategoryObj.parentDom = $clicked.parent().siblings('.next');
 			this.currentCategory = activeCategoryObj;
 		},
@@ -1572,10 +1573,13 @@ var MobileFilter = function() {
 		domCache.categories.on('click', function(event) {
 			event.preventDefault();
 			var $this = $(this);
-			domCache.selectedCategory = $this;
-			state.setActiveCategory($this);
-			_setSubheadings();
-			_switchRadioButton($this);
+			if (!$this.hasClass('selected')) {
+				domCache.selectedCategory = $this;
+				state.setActiveCategory($this);
+				_setSubheadings();
+				_switchRadioButton($this);
+			}
+			
 		});
 	};
 
@@ -1584,15 +1588,14 @@ var MobileFilter = function() {
 	};
 
 	function _switchRadioButton(clickedListItem) {
-		if (!clickedListItem.hasClass('selected')) {
-			domCache.categories.removeClass('selected');
-			clickedListItem.addClass('selected');
-		}
+		domCache.categories.removeClass('selected');
+		clickedListItem.addClass('selected');
 
 	};
 
 	function _setSubheadings() {
 		var textTemplate = state.currentCategory.parentName + ' > ' + state.currentCategory.name;
+
 		domCache.currentSelectionMaster.html(textTemplate);
 		$('.current-selection--parent').html('');
 		state.currentCategory.parentDom.find('.current-selection--parent').html(state.currentCategory.name);
