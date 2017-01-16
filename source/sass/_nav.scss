@@ -261,6 +261,10 @@
 .form {
     display: -webkit-box;
     display: flex;
+    flex-direction: column;
+	> * {
+	    margin: 0 0 15px;
+	}
 }
 
 .submit {
@@ -299,6 +303,9 @@
 
 	.languages {
 		display: flex;
+	}
+	.form {
+	    flex-direction: row;
 	}
 }
 

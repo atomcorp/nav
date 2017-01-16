@@ -103,12 +103,39 @@ a.slinky-top {
 
 .mob--result-header {
 	display: flex;
-	justify-content: space-around;
-	select {
-		padding: 8px 15px;
-		background: #d8d7d7;
-		border-color: #fff;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 15px 15px 0 15px;
+	.found-count {
+		padding: 0;
+		display: flex;
+		flex-grow: 1;
+		margin-bottom: 15px;
 	}
+}
+
+.lower-tier {
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+
+.mob--features {
+	select {
+		background: #d8d7d7;
+		border: 0;
+	}
+}
+
+.select-container {
+	display: flex;
+	align-items: center;
+	select {
+		background: #d8d7d7;
+		border: 0;
+	}
+
 }
 
 .category-product-count {

@@ -18,7 +18,7 @@
 						<li class="slink-item" data-system="Hi-Fi"><span class="radio"></span>All Hi-Fi</li>
 						<li class="slink-item" data-system="Hi-Fi"><span class="radio"></span>Network Players<span class="category-product-count">3</span></li>
 						<li class="slink-item" data-system="Hi-Fi"><span class="radio selected"></span>Disc Players<span class="category-product-count">6</span></li>
-						<li class="slink-item" data-system="Hi-Fi" data-feature-link="Amplifiers"><span class="radio"></span>Amplifiers<span class="category-product-count">10</span></li>
+						<li class="slink-item slink-item--amps" data-system="Hi-Fi" data-feature-link="Amplifiers"><span class="radio"></span>Amplifiers<span class="category-product-count">10</span></li>
 						<li class="slink-item" data-system="Hi-Fi"><span class="radio"></span>DACs<span class="category-product-count">4</span></li>
 						<li class="slink-item" data-system="Hi-Fi"><span class="radio"></span>Phono Stages<span class="category-product-count">4</span></li>
 						<li class="slink-item" data-system="Hi-Fi"><span class="radio"></span>All-in-one Systems<span class="category-product-count">2</span></li>
@@ -35,7 +35,7 @@
 						<li class="slink-item" data-system="Speakers"><span class="radio"></span>Surround<span class="category-product-count">3</span></li>
 						<li class="slink-item" data-system="Speakers"><span class="radio"></span>Subwoofers<span class="category-product-count">4</span></li>
 						<li class="slink-item" data-system="Speakers"><span class="radio"></span>In-Ceiling<span class="category-product-count">5</span></li>
-						<li class="slink-item" data-system="Speakers" data-feature-link="Wireless"><span class="radio"></span>Wireless<span class="category-product-count">8</span></li>
+						<li class="slink-item slink-item--wireless" data-system="Speakers" data-feature-link="Wireless"><span class="radio"></span>Wireless<span class="category-product-count">8</span></li>
 
 					</ul>
 				</li>
@@ -116,12 +116,33 @@
 		<div class="found-count">
 			Products found:&nbsp;<span class="found-count--number round">0</span>
 		</div>
-		<select class="round" name="" id="">
-			<option value="1">Expensive</option>
-			<option value="2">Cheap</option>
-			<option value="3">New</option>
-			<option value="3">Old</option>
-		</select>
+		<div class="lower-tier">
+			<div class="mob--features">
+				<select class="round mob--features-amp hide" name="" id="">
+					<option>Integrated</option>
+					<option>Power Amp</option>
+					<option>AV Receiver</option>
+					<option>With DAC</option>
+				</select>
+				<select name="" id="" class="round mob--features-wireless hide">
+					<option>Portable</option>
+					<option>Bluetooth</option>
+					<option>Cast</option>
+					<option>Airplay</option>
+					<option>Stereo</option>
+					<option>Multiroom</option>
+					<option>TV Compatible</option>
+				</select>
+			</div>
+			<div class="select-container">
+				<select class="round" name="" id="">
+					<option value="1">Expensive</option>
+					<option value="2">Cheap</option>
+					<option value="3">New</option>
+					<option value="3">Old</option>
+				</select>
+			</div>
+		</div>
 	</div>
 
 	<div class="results-list box no-border">

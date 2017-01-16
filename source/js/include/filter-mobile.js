@@ -52,6 +52,7 @@ var MobileFilter = function() {
 				_setSubheadings();
 				_switchRadioButton($this);
 				_getProductData(state.currentCategory.name);
+				setFilterStatus($this);
 			}
 			
 		});
@@ -150,6 +151,15 @@ var MobileFilter = function() {
 			} 
 		});
 	};
+
+	function setFilterStatus(clicked) {
+		$('.mob--features select').addClass('hide');
+		if (clicked.hasClass('slink-item--amps')) {
+			$('.mob--features-amp').removeClass('hide');
+		} else if (clicked.hasClass('slink-item--wireless')) {
+			$('.mob--features-wireless').removeClass('hide');
+		}
+	}
 
 	return {
 		testMyCode: testMyCode
