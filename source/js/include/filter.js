@@ -287,8 +287,10 @@ function hashSelectFilter() {
 		hash = hash.substring(1);
 	}
 
-	// look at a hash and the trigger respective tab	
-	$('.filter__heading--tabs[data-nav-hash="' + hash + '"]').trigger('click');
+	setTimeout(function() {
+		// look at a hash and the trigger respective tab	
+		$('.filter__heading--tabs[data-nav-hash="' + hash + '"]').trigger('click');
+	}, 0);
 
 	if (hash.length > 0) {
 		hash === 'hifi' ? $('.products-title').text('Hi-fi') : false;
