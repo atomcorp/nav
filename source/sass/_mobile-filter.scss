@@ -78,7 +78,7 @@ a.slinky-top {
 	margin: 0 0 0 15px;
 	display: inline-block;
     padding: 8px 15px;
-    border-radius: 255px 15px 255px 15px/15px 255px 15px 255px;
+    border-radius: 125px 255px 145px 255px/255px 125px 255px 145px;
 	color: #fff;
     &:not(:empty) {
     	background: #41403E;
@@ -90,9 +90,23 @@ a.slinky-top {
 	margin: 0 0 0 15px;
 	display: inline-block;
     padding: 8px 15px;
-    border-radius: 255px 15px 255px 15px/15px 255px 15px 255px;
+    border-radius: 125px 255px 145px 255px/255px 125px 255px 145px;
 	color: #fff;
     &:not(:empty) {
     	background: #41403E;
     }
+}
+
+.mob--result-container {
+	margin: 30px 0 0;
+}
+
+.mob--result-header {
+	display: flex;
+	justify-content: space-around;
+	select {
+		padding: 8px 15px;
+		background: #d8d7d7;
+		border-color: #fff;
+	}
 }
