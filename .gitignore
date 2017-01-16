@@ -7,3 +7,4 @@ source/html
 *.sublime-project
 *.sublime-workspace
 *.jshintignore
+ignore

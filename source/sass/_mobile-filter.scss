@@ -1,0 +1,29 @@
+.mob--container {
+	padding: 15px;
+}
+
+.slinky-menu {
+	background: #fff;
+	a {
+		color: #41403E;
+		border-color: #41403E;
+		&:hover {
+			background: #f3eeee;
+		}
+	}
+	& > ul {
+		padding: 0;
+	}
+
+	li ul {
+		padding: 0;
+	}
+}
+
+.slinky-top {
+	background: #fff;
+}
+
+.slink-item {
+	color: #41403E;
+}

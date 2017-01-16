@@ -99,7 +99,8 @@
 }
 
 .languages {
-	width: 100%;
+	display: none;
+	flex-basis: 100%;
 	justify-content: flex-end;
 	padding: 0 0 15px;
 	font-size: 12px;
@@ -295,6 +296,10 @@
 	.dropdown__products {
 		flex-direction: row;
 	}
+
+	.languages {
+		display: flex;
+	}
 }
 
 
@@ -307,7 +312,7 @@
 	}
 
 	.nav {
-		flex-wrap: no-wrap;
+		flex-wrap: nowrap;
 		padding: 15px 0;
 	}
 
@@ -318,7 +323,6 @@
 	.nav__products {
 		order: 2;
 		justify-content: flex-start;
-		margin: 0 30px 0 0;
 		text-align: left;
 	}
 	.nav__product {
