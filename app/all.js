@@ -1546,7 +1546,7 @@ var MobileFilter = function() {
 		},
 		setActiveCategory: function($clicked) {
 			var activeCategoryObj = {};
-			activeCategoryObj.name =  $clicked.text();
+			activeCategoryObj.name =  $clicked.contents().get(1).nodeValue;
 			activeCategoryObj.dom = $clicked;
 			// http://stackoverflow.com/a/22117753/2368141
 			activeCategoryObj.parentName = $clicked.parent().siblings('.next').contents().get(0).nodeValue;
@@ -1629,19 +1629,14 @@ var MobileFilter = function() {
 		} else {
 			// also look at categories
 			for (var i = 0; i < cachedData.length; i++) {
-
 				for (var x = 0; x < cachedData[i]['child-category'].length; x++) {
-
-
 					if (cachedData[i]['child-category'][x].title === categoryName) {
-						
 						for (var y = 0; y < cachedData[i]['child-category'][x].products.length; y++) {
 							var name = cachedData[i]['child-category'][x].products[y].title;
 							var price = cachedData[i]['child-category'][x].products[y].nid;
 							var strapline = cachedData[i]['child-category'][x].products[y].strapline;
 							var colours = cachedData[i]['child-category'][x].products[y].colours;
 							products.push(productMarkup(name, price, strapline, colours));
-							
 						}
 					}
 				}
@@ -1660,13 +1655,12 @@ var MobileFilter = function() {
 		// 	$list.html('<div>' +  'No results' + '</div>');
 		// 	$('.found-count--number').text('0');
 		// }
-		console.log(products);
 		$('.results-list').html(products);
 		$('.found-count--number').text(products.length);
 		slinky.home();
 		setTimeout(function() {
 			$('html, body').animate({
-		        scrollTop: $(".mob--container").offset().top
+		        scrollTop: $(".mob--container").offset().top + $('.mob--dynamic-title h2').outerHeight(true)
 		    }, 300);
 		}, 200);
 		
