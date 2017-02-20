@@ -1605,6 +1605,8 @@ var MobileFilter = function() {
 		$('.current-selection--parent').html('');
 		state.currentCategory.parentDom.find('.current-selection--parent').html(state.currentCategory.name);
 		$('.mob--dynamic-title h1').text(textTemplate);
+		$('.magellan .current-selection--master').text(textTemplate);
+
 	}
 
 	function _getProductData(categoryName) {

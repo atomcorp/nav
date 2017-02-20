@@ -1,0 +1,28 @@
+.filter__content--magellan {
+	border: 0;
+}
+
+.filter__content--magellan {
+	.toolbar--corner {
+		width: 100%;
+		align-items: flex-start;
+	}
+	.toolbar {
+		border: 0;
+	}
+	.results-list {
+		padding: 15px 0;
+	}
+}
+
+.magellan {
+	margin: 0 auto 0 0;
+	min-width: 400px;
+}
+
+@media (min-width: 992px) {
+	.result---product {
+	    padding: 15px;
+	    width: 33.33333333333%;
+	}
+}
