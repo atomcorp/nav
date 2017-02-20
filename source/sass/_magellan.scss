@@ -3,6 +3,7 @@
 }
 
 .filter__content--magellan {
+	overflow: visible;
 	.toolbar--corner {
 		width: 100%;
 		align-items: flex-start;
@@ -18,6 +19,11 @@
 .magellan {
 	margin: 0 auto 0 0;
 	min-width: 400px;
+	position: relative;
+	.slinky-menu {
+		position: absolute;
+		width: 400px;
+	}
 }
 
 @media (min-width: 992px) {
