@@ -1526,7 +1526,12 @@ function hashSelectFilter() {
 		hash === 'home' ? $('.products-title').text('Home cinema') : false;
 	}
 }
+var toggle = 0;
 
+$('.filter-sidebar').on('click', function(event) {
+	event.preventDefault();
+	$(".sidebar").animate({'min-width':'toggle'},350);
+});
 var slinky = $('.slinky-menu').slinky({
 	title: false,
 

@@ -1,5 +1,6 @@
 .sidebar {
 	min-width: 250px;
+	transition: min-width 0.5s;
 }
 
 .filter--sidebar {
@@ -81,4 +82,9 @@
     		color: #ccc;
     	}
     }
+}
+
+.topbar {
+	display: flex;
+	justify-content: space-between;
 }
